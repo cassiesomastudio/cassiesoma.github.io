@@ -69,22 +69,19 @@ p{
     font-size:17px;
 }
 
-/* ✅ FINAL GALLERY (NO CROPPING, STABLE) */
+/* ✅ FINAL GALLERY */
 .gallery{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:20px;
-    align-items:start;
 }
 
 .gallery img{
     width:100%;
-    height:300px;
-    object-fit:contain;
-    object-position:top;
+    height:auto;
     display:block;
-    background:#f6f6f4;
 }
+
 footer{
     text-align:center;
     padding:40px;
@@ -139,9 +136,16 @@ series documenting a slow-burn artistic life.
 
 <div class="gallery">
 
+    <!-- TOP LEFT -->
     <img src="CB623C08-A76F-4345-9623-93044537CCFD.png">
+
+    <!-- TOP RIGHT -->
     <img src="IMG_7169.jpeg">
+
+    <!-- BOTTOM LEFT -->
     <img src="IMG_7428.jpeg">
+
+    <!-- BOTTOM RIGHT -->
     <img src="IMG_7404.jpeg">
 
 </div>
