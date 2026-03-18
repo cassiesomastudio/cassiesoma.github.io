@@ -50,7 +50,7 @@ nav a:hover{
 }
 
 .container{
-    max-width:800px;
+    max-width:600px;
     margin:auto;
     padding:60px 20px;
 }
@@ -69,16 +69,25 @@ p{
     font-size:17px;
 }
 
-/* ✅ FINAL GALLERY */
+/* ✅ FINAL GALLERY — UNIFORM BOXES */
 .gallery{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:20px;
 }
 
-.gallery img{
+.gallery div{
     width:100%;
-    height:auto;
+    aspect-ratio:1 / 1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#f6f6f4;
+}
+
+.gallery img{
+    max-width:100%;
+    max-height:100%;
     display:block;
 }
 
@@ -137,16 +146,16 @@ series documenting a slow-burn artistic life.
 <div class="gallery">
 
     <!-- TOP LEFT -->
-    <img src="CB623C08-A76F-4345-9623-93044537CCFD.png">
+    <div><img src="CB623C08-A76F-4345-9623-93044537CCFD.png"></div>
 
     <!-- TOP RIGHT -->
-    <img src="IMG_7169.jpeg">
+    <div><img src="IMG_7169.jpeg"></div>
 
     <!-- BOTTOM LEFT -->
-    <img src="IMG_7428.jpeg">
+    <div><img src="IMG_7428.jpeg"></div>
 
     <!-- BOTTOM RIGHT -->
-    <img src="IMG_7404.jpeg">
+    <div><img src="IMG_7404.jpeg"></div>
 
 </div>
 
