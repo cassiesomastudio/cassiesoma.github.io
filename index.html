@@ -71,16 +71,20 @@ p{
 
 /* ✅ FINAL GALLERY (NO CROPPING, STABLE) */
 .gallery{
-    column-count:2;
-    column-gap:20px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    align-items:start;
 }
 
 .gallery img{
     width:100%;
-    margin-bottom:20px;
+    height:300px;
+    object-fit:contain;
+    object-position:top;
     display:block;
+    background:#f6f6f4;
 }
-
 footer{
     text-align:center;
     padding:40px;
