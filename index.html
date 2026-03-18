@@ -50,7 +50,7 @@ nav a:hover{
 }
 
 .container{
-    max-width:600px;
+    max-width:800px;
     margin:auto;
     padding:60px 20px;
 }
@@ -69,25 +69,20 @@ p{
     font-size:17px;
 }
 
-/* ✅ SIMPLE + STABLE GRID */
 .gallery{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:16px;
+    gap:20px;
 }
 
-.gallery img{
-    width:100%;
-    height:auto;
-    display:block;
-    border-radius:4px;
-}
-
-/* ✅ FIXES MOBILE WEIRDNESS */
-@media (max-width:600px){
-    .gallery{
-        grid-template-columns:1fr 1fr;
-    }
+.placeholder{
+    background:#ddd;
+    height:250px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:14px;
+    color:#666;
 }
 
 footer{
@@ -105,7 +100,7 @@ footer{
 <header>
 <h1>Cassie Soma Studio</h1>
 <div class="subtitle">
-Photography · Writing · Embodied Art · Boutique Mobile Pet Grooming Craft Studio
+Photography · Writing · Embodied Craft
 </div>
 </header>
 
@@ -143,12 +138,10 @@ series documenting a slow-burn artistic life.
 <h2>Photography</h2>
 
 <div class="gallery">
-
-    <img src="CB623C08-A76F-4345-9623-93044537CCFD.png">
-    <img src="IMG_7169.jpeg">
-    <img src="IMG_7428.jpeg">
-    <img src="IMG_7404.jpeg">
-
+<div class="placeholder">Image</div>
+<div class="placeholder">Image</div>
+<div class="placeholder">Image</div>
+<div class="placeholder">Image</div>
 </div>
 
 <p style="margin-top:20px;">
@@ -159,6 +152,10 @@ presence, and the relationship between subject and self.
 
 <section id="writing">
 <h2>Writing</h2>
+
+<p>
+Selected essays and reflections:
+</p>
 
 <ul>
 <li>When the Mirror Stopped Arguing With Me</li>
@@ -179,6 +176,11 @@ Full writing archive available on Substack.
 Dog grooming is both profession and practice — a study in patience,
 precision, and the quiet relationship between human and animal.
 </p>
+
+<p>
+These experiences inform the essays and reflections collected in
+<em>Notes from the Grooming Table</em>.
+</p>
 </section>
 
 <section id="contact">
@@ -188,6 +190,9 @@ precision, and the quiet relationship between human and animal.
 Substack · Bluesky · Studio inquiries
 </p>
 
+<p>
+Links and contact information can live here.
+</p>
 </section>
 
 </div>
