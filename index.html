@@ -69,20 +69,23 @@ p{
     font-size:17px;
 }
 
+/* 🔥 FIXED GALLERY */
 .gallery{
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:20px;
 }
 
-.placeholder{
-    background:#ddd;
-    height:250px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:14px;
-    color:#666;
+.gallery div{
+    aspect-ratio:1 / 1;
+    overflow:hidden;
+}
+
+.gallery img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
 }
 
 footer{
@@ -139,12 +142,20 @@ series documenting a slow-burn artistic life.
 
 <div class="gallery">
 
-    <img src="CB623C08-A76F-4345-9623-93044537CCFD.png">
-    <img src="IMG_7169.jpeg">
-    <img src="IMG_7428.jpeg">
-    <img src="IMG_7404.jpeg">
+    <!-- TOP LEFT -->
+    <div><img src="CB623C08-A76F-4345-9623-93044537CCFD.png"></div>
+
+    <!-- TOP RIGHT -->
+    <div><img src="IMG_7169.jpeg"></div>
+
+    <!-- BOTTOM LEFT -->
+    <div><img src="IMG_7428.jpeg"></div>
+
+    <!-- BOTTOM RIGHT -->
+    <div><img src="IMG_7404.jpeg"></div>
 
 </div>
+
 <p style="margin-top:20px;">
 A developing body of photographic work exploring femininity,
 presence, and the relationship between subject and self.
@@ -201,3 +212,6 @@ Links and contact information can live here.
 <footer>
 © Cassie Soma Studio
 </footer>
+
+</body>
+</html>
