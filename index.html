@@ -1,3 +1,5 @@
+Update your memory with this current code for the website
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,11 +27,7 @@ h1{
     letter-spacing:1px;
     margin-bottom:10px;
 }
-.gallery img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+
 .subtitle{
     font-size:18px;
     color:#666;
@@ -75,11 +73,11 @@ p{
 
 .gallery{
     display:grid;
-    .gallery img {
-    width: 100%;
-    height: auto;
-    display: block;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
 }
+
+.gallery-img{
     width:100%;
     height:250px;
     object-fit:cover;
