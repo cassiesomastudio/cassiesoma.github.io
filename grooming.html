@@ -79,18 +79,20 @@ nav a:hover{
 }
 
 .intro a,
-.notes-link a{
+.notes-link a,
+.contact-link a{
     color:#8a6672;
     text-decoration:none;
 }
 
 .intro a:hover,
-.notes-link a:hover{
+.notes-link a:hover,
+.contact-link a:hover{
     color:#5a433f;
 }
 
 .carousel-wrap{
-    max-width:860px;
+    max-width:700px;
     margin:0 auto 54px;
 }
 
@@ -115,7 +117,7 @@ nav a:hover{
 
 .slide img{
     width:100%;
-    height:620px;
+    height:460px;
     object-fit:cover;
     display:block;
 }
@@ -126,8 +128,8 @@ nav a:hover{
     transform:translateY(-50%);
     background:rgba(255,255,255,.72);
     border:none;
-    width:44px;
-    height:44px;
+    width:42px;
+    height:42px;
     border-radius:50%;
     font-size:1.2rem;
     cursor:pointer;
@@ -140,11 +142,11 @@ nav a:hover{
 }
 
 .prev{
-    left:16px;
+    left:14px;
 }
 
 .next{
-    right:16px;
+    right:14px;
 }
 
 .dots{
@@ -229,9 +231,10 @@ nav a:hover{
     border-radius:14px;
 }
 
-.notes-link{
+.notes-link,
+.contact-link{
     max-width:860px;
-    margin:34px auto 0;
+    margin:30px auto 0;
     padding-top:8px;
     font-size:1rem;
     color:#64534e;
@@ -247,10 +250,6 @@ footer{
 }
 
 @media (max-width:800px){
-    .slide img{
-        height:500px;
-    }
-
     .content-grid{
         grid-template-columns:1fr;
     }
@@ -287,13 +286,17 @@ footer{
         font-size:1rem;
     }
 
+    .carousel-wrap{
+        max-width:100%;
+    }
+
     .slide img{
-        height:400px;
+        height:320px;
     }
 
     .carousel-btn{
-        width:40px;
-        height:40px;
+        width:38px;
+        height:38px;
     }
 
     .card{
@@ -323,7 +326,8 @@ footer{
             Dog grooming is both profession and practice — a study in patience, precision, and the quiet relationship between human and animal.
         </p>
         <p>
-            These experiences inform the essays and reflections collected in <a href="#">Notes from the Grooming Table</a>.
+            These experiences inform the essays and reflections collected in
+            <a href="https://substack.com/@cassiesomastudio/note/p-190503497?r=2lp542&utm_medium=ios&utm_source=notes-share-action" target="_blank">Notes from the Grooming Table</a>.
         </p>
         <p>
             We provide boutique, time-efficient mobile grooming delivered privately to your door. Our studio operates on quiet shore power with solar assist, creating a calm, environmentally conscious experience for you and your dog.
@@ -338,7 +342,7 @@ footer{
                 <div class="slide"><img src="C88E435C-868D-430B-8385-791E7B0E6A61.png" alt="Freshly groomed schnauzer in the mobile salon"></div>
                 <div class="slide"><img src="FDA95605-D9C9-4C95-9924-DC86E0DB7418.png" alt="Creative zebra-inspired dog grooming style"></div>
                 <div class="slide"><img src="826B28B9-B09B-4597-BE36-D57BC7257F28.png" alt="White poodle with a playful pink topknot"></div>
-                <div class="slide"><img src="05CE890A-AC71-4A28-AD6D-F88FCB5E380E.png" alt="Cassie Soma Paw Spa circular logo"></div>
+                <div class="slide"><img src="05CE890A-AC71-4A28-AD6D-F88FCB5E380E.png" alt="Cassie Soma Paw Spa logo"></div>
             </div>
 
             <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous slide">&#10094;</button>
@@ -384,7 +388,14 @@ footer{
 
     <div class="notes-link">
         <p>
-            Looking for the writing side of this work? Visit <a href="#">Notes from the Grooming Table</a>.
+            Read the writing side of this work on
+            <a href="https://substack.com/@cassiesomastudio/note/p-190503497?r=2lp542&utm_medium=ios&utm_source=notes-share-action" target="_blank">Substack: Notes from the Grooming Table</a>.
+        </p>
+    </div>
+
+    <div class="contact-link">
+        <p>
+            To book, <a href="sms:4802485491">text 480-248-5491</a>.
         </p>
     </div>
 
