@@ -54,27 +54,26 @@ nav a:hover{
 }
 
 .container{
-    max-width:900px;
+    max-width:980px;
     margin:0 auto;
     padding:56px 24px 80px;
 }
 
-.anchor-image{
-    margin-bottom:34px;
+.top-section{
+    max-width:860px;
+    margin:0 auto 44px;
+    display:grid;
+    grid-template-columns:320px 1fr;
+    gap:34px;
+    align-items:center;
 }
 
 .anchor-image img{
     width:100%;
-    max-width:440px;
+    max-width:320px;
     display:block;
-    margin:0 auto;
     border-radius:22px;
     box-shadow:0 14px 34px rgba(90,60,60,.12);
-}
-
-.intro{
-    max-width:760px;
-    margin:0 auto 46px;
 }
 
 .intro h2{
@@ -87,7 +86,7 @@ nav a:hover{
 .intro p{
     font-size:1.08rem;
     color:#5d4949;
-    margin-bottom:22px;
+    margin-bottom:20px;
 }
 
 .writing-section{
@@ -144,12 +143,16 @@ nav a:hover{
     font-size:1rem;
 }
 
-.entry-text a{
+.entry-text a,
+.text-only a,
+.substack-more a{
     color:#8a5e69;
     text-decoration:none;
 }
 
-.entry-text a:hover{
+.entry-text a:hover,
+.text-only a:hover,
+.substack-more a:hover{
     color:#5a3d3d;
 }
 
@@ -171,16 +174,6 @@ nav a:hover{
     padding-top:28px;
     border-top:1px solid #decac3;
     text-align:left;
-}
-
-.substack-more a{
-    color:#8a5e69;
-    text-decoration:none;
-    font-size:1rem;
-}
-
-.substack-more a:hover{
-    color:#5a3d3d;
 }
 
 footer{
@@ -214,8 +207,15 @@ footer{
         padding:40px 22px 64px;
     }
 
+    .top-section{
+        grid-template-columns:1fr;
+        gap:24px;
+        margin-bottom:36px;
+    }
+
     .anchor-image{
-        margin-bottom:28px;
+        display:flex;
+        justify-content:center;
     }
 
     .anchor-image img{
@@ -263,18 +263,20 @@ footer{
 
 <div class="container">
 
-    <div class="anchor-image">
-        <img src="CB623C08-A76F-4345-9623-93044537CCFD.png" alt="Cassie Soma studio portrait">
-    </div>
+    <section class="top-section">
+        <div class="anchor-image">
+            <img src="CB623C08-A76F-4345-9623-93044537CCFD.png" alt="Cassie Soma studio portrait">
+        </div>
 
-    <section class="intro">
-        <h2>Art Studio</h2>
-        <p>
-            A developing body of work exploring femininity, embodiment, memory, ritual, and the quiet ways identity settles into form.
-        </p>
-        <p>
-            This space holds photography and writing together — not as separate disciplines, but as parts of the same unfolding life.
-        </p>
+        <div class="intro">
+            <h2>Art Studio</h2>
+            <p>
+                A developing body of work exploring femininity, embodiment, memory, ritual, and the quiet ways identity settles into form.
+            </p>
+            <p>
+                This space holds photography and writing together — not as separate disciplines, but as parts of the same unfolding life.
+            </p>
+        </div>
     </section>
 
     <section class="writing-section">
