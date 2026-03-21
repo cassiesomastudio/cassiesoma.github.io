@@ -16,7 +16,7 @@ body{
 
 header{
     text-align:center;
-    padding:56px 24px 18px;
+    padding:52px 24px 20px;
     max-width:760px;
     margin:0 auto;
 }
@@ -32,26 +32,7 @@ h1{
 .subtitle{
     font-size:1.1rem;
     color:#8a6b6b;
-    margin-bottom:26px;
-}
-
-nav{
-    display:flex;
-    justify-content:center;
-    gap:22px;
-    flex-wrap:wrap;
-    margin-bottom:8px;
-}
-
-nav a{
-    text-decoration:none;
-    color:#7d5f5f;
-    font-size:.98rem;
-    letter-spacing:.04em;
-}
-
-nav a:hover{
-    color:#a06f7a;
+    margin-bottom:12px;
 }
 
 section{
@@ -61,7 +42,7 @@ section{
 }
 
 #about{
-    padding-top:4px;
+    padding-top:0;
 }
 
 h2{
@@ -84,10 +65,24 @@ p{
     margin-top:44px;
 }
 
+.path-wrap{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.press-here{
+    font-size:.9rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:#9b7e7e;
+    margin-left:8px;
+}
+
 .path-card{
     position:relative;
     display:block;
-    min-height:300px;
+    min-height:230px;
     border-radius:30px;
     overflow:hidden;
     text-decoration:none;
@@ -105,21 +100,21 @@ p{
     content:"";
     position:absolute;
     inset:0;
-    background:linear-gradient(to top, rgba(44,28,28,.62), rgba(44,28,28,.22) 48%, rgba(44,28,28,.10));
+    background:linear-gradient(to top, rgba(44,28,28,.54), rgba(44,28,28,.18) 52%, rgba(44,28,28,.06));
 }
 
 .path-content{
     position:absolute;
     left:28px;
     right:28px;
-    bottom:28px;
+    bottom:24px;
     z-index:2;
     color:#fff8f5;
 }
 
 .path-content h3{
-    margin:0 0 10px;
-    font-size:2.7rem;
+    margin:0 0 8px;
+    font-size:2.35rem;
     font-weight:normal;
     line-height:1.05;
     color:#fff7f3;
@@ -128,10 +123,10 @@ p{
 
 .path-content p{
     margin:0;
-    font-size:1.08rem;
+    font-size:1.02rem;
     color:#f7ece7;
-    max-width:420px;
-    line-height:1.6;
+    max-width:430px;
+    line-height:1.55;
     text-shadow:0 1px 6px rgba(0,0,0,.25);
 }
 
@@ -146,7 +141,7 @@ footer{
 
 @media (max-width:700px){
     header{
-        padding:44px 22px 12px;
+        padding:42px 22px 14px;
     }
 
     h1{
@@ -155,39 +150,40 @@ footer{
 
     .subtitle{
         font-size:1rem;
-        margin-bottom:22px;
-    }
-
-    nav{
-        gap:18px;
-        margin-bottom:2px;
+        margin-bottom:8px;
     }
 
     section{
         padding:0 22px 60px;
     }
 
-    #about{
-        padding-top:0;
+    .pathways{
+        margin-top:36px;
+        gap:30px;
+    }
+
+    .press-here{
+        font-size:.82rem;
+        margin-left:6px;
     }
 
     .path-card{
-        min-height:250px;
+        min-height:210px;
         border-radius:26px;
     }
 
     .path-content{
         left:22px;
         right:22px;
-        bottom:22px;
+        bottom:20px;
     }
 
     .path-content h3{
-        font-size:2.15rem;
+        font-size:2rem;
     }
 
     .path-content p{
-        font-size:1rem;
+        font-size:.98rem;
     }
 }
 </style>
@@ -198,12 +194,6 @@ footer{
 <header>
     <h1>Cassie Soma Studio</h1>
     <div class="subtitle">Photography · Writing · Embodied Art · Grooming Craft</div>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="studio.html">Art Studio</a>
-        <a href="grooming.html">Grooming Craft</a>
-    </nav>
 </header>
 
 <section id="about">
@@ -219,19 +209,25 @@ footer{
     </p>
 
     <div class="pathways">
-        <a href="studio.html" class="path-card" style="background-image:url('CB623C08-A76F-4345-9623-93044537CCFD.png'); background-position:center 30%;">
-            <div class="path-content">
-                <h3>Art Studio</h3>
-                <p>Photography, writing, and embodied work.</p>
-            </div>
-        </a>
+        <div class="path-wrap">
+            <div class="press-here">Press here</div>
+            <a href="studio.html" class="path-card" style="background-image:url('CB623C08-A76F-4345-9623-93044537CCFD.png'); background-position:center 24%;">
+                <div class="path-content">
+                    <h3>Art Studio</h3>
+                    <p>Photography, writing, and embodied work.</p>
+                </div>
+            </a>
+        </div>
 
-        <a href="grooming.html" class="path-card" style="background-image:url('F05B9965-A540-4B0F-9697-633A63BEAAE0.png'); background-position:center 32%;">
-            <div class="path-content">
-                <h3>Grooming Craft</h3>
-                <p>Boutique mobile grooming with calm, attentive care.</p>
-            </div>
-        </a>
+        <div class="path-wrap">
+            <div class="press-here">Press here</div>
+            <a href="grooming.html" class="path-card" style="background-image:url('F05B9965-A540-4B0F-9697-633A63BEAAE0.png'); background-position:center 28%;">
+                <div class="path-content">
+                    <h3>Grooming Craft</h3>
+                    <p>Boutique mobile grooming with calm, attentive care.</p>
+                </div>
+            </a>
+        </div>
     </div>
 </section>
 
