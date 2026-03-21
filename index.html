@@ -17,7 +17,7 @@ body{
 header{
     text-align:center;
     padding:42px 24px 14px;
-    max-width:760px;
+    max-width:1100px;
     margin:0 auto;
 }
 
@@ -36,7 +36,7 @@ h1{
 }
 
 section{
-    max-width:760px;
+    max-width:1100px;
     margin:0 auto;
     padding:0 24px 64px;
 }
@@ -72,8 +72,8 @@ p{
 }
 
 .press-here{
-    font-size:.72rem;
-    letter-spacing:.12em;
+    font-size:.68rem;
+    letter-spacing:.14em;
     text-transform:uppercase;
     color:#a48b8b;
     margin-left:8px;
@@ -143,6 +143,43 @@ footer{
     margin-top:12px;
 }
 
+@media (min-width:900px){
+    .pathways{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:26px;
+        align-items:start;
+    }
+
+    .path-card{
+        min-height:370px;
+        background-size:cover;
+    }
+
+    .studio-card{
+        background-position:center 22%;
+    }
+
+    .grooming-card{
+        background-position:center center;
+    }
+
+    .path-content{
+        left:26px;
+        right:26px;
+        bottom:24px;
+    }
+
+    .path-content h3{
+        font-size:2.2rem;
+    }
+
+    .path-content p{
+        font-size:1rem;
+        max-width:90%;
+    }
+}
+
 @media (max-width:700px){
     header{
         padding:38px 22px 12px;
@@ -204,7 +241,7 @@ footer{
     <div class="pathways">
         <div class="path-wrap">
             <div class="press-here">Enter here</div>
-            <a href="studio.html" class="path-card" style="background-image:url('CB623C08-A76F-4345-9623-93044537CCFD.png');">
+            <a href="studio.html" class="path-card studio-card" style="background-image:url('CB623C08-A76F-4345-9623-93044537CCFD.png');">
                 <div class="path-content">
                     <h3>Art Studio</h3>
                     <p>Photography, writing, and embodied work.</p>
@@ -214,7 +251,7 @@ footer{
 
         <div class="path-wrap">
             <div class="press-here">Enter here</div>
-            <a href="grooming.html" class="path-card" style="background-image:url('F05B9965-A540-4B0F-9697-633A63BEAAE0.png');">
+            <a href="grooming.html" class="path-card grooming-card" style="background-image:url('F05B9965-A540-4B0F-9697-633A63BEAAE0.png');">
                 <div class="path-content">
                     <h3>Grooming Craft</h3>
                     <p>Boutique mobile grooming with calm, attentive care.</p>
