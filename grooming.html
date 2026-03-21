@@ -3,55 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grooming Craft | Cassie Soma Studio</title>
+<title>Art Studio | Cassie Soma Studio</title>
 
 <style>
 body{
     margin:0;
     font-family:Georgia, serif;
-    background:#f6f6f4;
-    color:#222;
-    line-height:1.6;
+    background:#ece3db;
+    color:#2b211f;
+    line-height:1.7;
 }
 
 header{
     text-align:center;
-    padding:80px 20px 40px 20px;
+    padding:90px 20px 40px 20px;
+    background:#e7dbd1;
 }
 
 h1{
-    font-size:42px;
+    font-size:44px;
     letter-spacing:1px;
-    margin-bottom:10px;
+    margin-bottom:12px;
+    font-weight:normal;
+    color:#2f2321;
 }
 
 .subtitle{
     font-size:18px;
-    color:#666;
+    color:#6f5650;
+    letter-spacing:0.4px;
 }
 
 nav{
     text-align:center;
-    padding:20px;
-    border-top:1px solid #ddd;
-    border-bottom:1px solid #ddd;
+    padding:18px 20px;
+    border-top:1px solid #cdbdaf;
+    border-bottom:1px solid #cdbdaf;
+    background:#f3ebe4;
 }
 
 nav a{
     margin:0 15px;
     text-decoration:none;
-    color:#444;
+    color:#6a4d45;
     font-size:15px;
 }
 
 nav a:hover{
-    color:black;
+    color:#2b211f;
 }
 
 .container{
-    max-width:800px;
+    max-width:860px;
     margin:auto;
-    padding:60px 20px;
+    padding:60px 24px 90px 24px;
 }
 
 section{
@@ -60,18 +65,20 @@ section{
 
 h2{
     font-weight:normal;
-    font-size:28px;
-    margin-bottom:20px;
+    font-size:30px;
+    margin-bottom:22px;
+    color:#332725;
 }
 
 p{
     font-size:17px;
+    color:#473834;
 }
 
 .carousel{
     overflow:hidden;
     width:100%;
-    padding:20px 0;
+    padding:16px 0 8px 0;
 }
 
 .carousel-track{
@@ -82,10 +89,11 @@ p{
 }
 
 .carousel-track img{
-    height:220px;
+    height:240px;
     width:auto;
     object-fit:cover;
-    border-radius:6px;
+    border-radius:10px;
+    box-shadow:0 12px 28px rgba(50, 30, 25, 0.16);
 }
 
 @keyframes scroll{
@@ -97,22 +105,45 @@ p{
     }
 }
 
-.cta{
-    margin-top:30px;
+.writing-list{
+    padding-left:22px;
+    color:#473834;
 }
 
-.cta a{
-    text-decoration:none;
-    color:#222;
-    border-bottom:1px solid #999;
+.writing-list li{
+    margin-bottom:10px;
+    font-size:17px;
+}
+
+a{
+    color:#744d45;
+}
+
+a:hover{
+    color:#4b312c;
 }
 
 footer{
     text-align:center;
-    padding:40px;
+    padding:36px;
     font-size:14px;
-    color:#777;
-    border-top:1px solid #ddd;
+    color:#816c64;
+    border-top:1px solid #cdbdaf;
+    background:#f3ebe4;
+}
+
+@media (max-width:700px){
+    h1{
+        font-size:35px;
+    }
+
+    .subtitle{
+        font-size:16px;
+    }
+
+    .carousel-track img{
+        height:200px;
+    }
 }
 </style>
 </head>
@@ -122,41 +153,57 @@ footer{
 <header>
     <h1>Cassie Soma Studio</h1>
     <div class="subtitle">
-        Grooming Craft
+        Photography · Writing · Embodied Art
     </div>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="studio.html">Art Studio</a>
+    <a href="grooming.html">Grooming Craft</a>
 </nav>
 
 <div class="container">
 
-    <section id="craft">
-        <h2>Grooming Craft</h2>
-
-        <p>
-            Dog grooming is both profession and practice — a study in patience, precision, and the quiet relationship between human and animal.
-        </p>
-
-        <p>
-            These experiences inform the essays and reflections collected in <em>Notes from the Grooming Table</em>.
-        </p>
+    <section id="photography">
+        <h2>Photography</h2>
 
         <div class="carousel">
             <div class="carousel-track">
-
-                <img src="IMG_7621.jpeg">
-                <img src="F05B9965-A540-4B0F-9697-633A63BEAAE0.png">
-                <img src="IMG_7621.jpeg">
-                <img src="F05B9965-A540-4B0F-9697-633A63BEAAE0.png">
-
+                <img src="IMG_7169.jpeg" alt="Art photograph">
+                <img src="IMG_7428.jpeg" alt="Art photograph">
+                <a href="https://substack.com/@cassiesomastudio/note/p-191442260" target="_blank">
+                    <img src="IMG_7404.jpeg" alt="Linked art photograph">
+                </a>
+                <img src="IMG_7169.jpeg" alt="Art photograph">
+                <img src="IMG_7428.jpeg" alt="Art photograph">
+                <a href="https://substack.com/@cassiesomastudio/note/p-191442260" target="_blank">
+                    <img src="IMG_7404.jpeg" alt="Linked art photograph">
+                </a>
             </div>
         </div>
 
-        <p class="cta">
-            <a href="sms:+14802485491">Text to schedule ✨</a>
+        <p style="margin-top:24px;">
+            A developing body of photographic work exploring femininity, presence, and the relationship between subject and self.
+        </p>
+    </section>
+
+    <section id="writing">
+        <h2>Writing</h2>
+
+        <p>
+            Selected essays and reflections:
+        </p>
+
+        <ul class="writing-list">
+            <li>When the Mirror Stopped Arguing With Me</li>
+            <li>After the Last Appointment</li>
+            <li>Dust Travels</li>
+            <li>Notes from the Grooming Table</li>
+        </ul>
+
+        <p>
+            Full writing archive available on
+            <a href="https://cassiesomastudio.substack.com" target="_blank">Substack</a>.
         </p>
     </section>
 
