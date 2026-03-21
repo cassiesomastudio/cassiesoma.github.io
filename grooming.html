@@ -9,59 +9,59 @@
 body{
     margin:0;
     font-family:Georgia, serif;
-    background:#f4eee9;
-    color:#3f332f;
+    background:#f6ece8;
+    color:#463735;
     line-height:1.75;
 }
 
 header{
     text-align:center;
     padding:70px 24px 34px;
-    background:#e9ddd6;
+    background:#eddcd6;
 }
 
 h1{
     font-size:2.9rem;
     font-weight:normal;
     margin:0 0 12px;
-    color:#5a433f;
+    color:#634846;
     letter-spacing:.02em;
 }
 
 .subtitle{
     font-size:1.08rem;
-    color:#7b625f;
+    color:#8a6a68;
 }
 
 nav{
     text-align:center;
     padding:16px 20px;
-    background:#f7f1ed;
-    border-top:1px solid #dbc9c1;
-    border-bottom:1px solid #dbc9c1;
+    background:#f9f1ee;
+    border-top:1px solid #e2cbc3;
+    border-bottom:1px solid #e2cbc3;
 }
 
 nav a{
     margin:0 14px;
     text-decoration:none;
-    color:#7a5f5a;
+    color:#846563;
     font-size:.96rem;
     letter-spacing:.03em;
 }
 
 nav a:hover{
-    color:#5a433f;
+    color:#634846;
 }
 
 .container{
     max-width:980px;
     margin:0 auto;
-    padding:56px 24px 80px;
+    padding:56px 24px 84px;
 }
 
 .intro{
     max-width:760px;
-    margin:0 auto 38px;
+    margin:0 auto 34px;
     text-align:left;
 }
 
@@ -69,39 +69,39 @@ nav a:hover{
     font-size:2rem;
     font-weight:normal;
     margin:0 0 18px;
-    color:#5a433f;
+    color:#634846;
 }
 
 .intro p{
     font-size:1.08rem;
-    color:#5f4d49;
+    color:#64514e;
     margin:0 0 18px;
 }
 
 .intro a,
 .notes-link a,
 .contact-link a{
-    color:#8a6672;
+    color:#9a6b7a;
     text-decoration:none;
 }
 
 .intro a:hover,
 .notes-link a:hover,
 .contact-link a:hover{
-    color:#5a433f;
+    color:#634846;
 }
 
 .carousel-wrap{
-    max-width:700px;
-    margin:0 auto 54px;
+    max-width:660px;
+    margin:0 auto 48px;
 }
 
 .carousel{
     position:relative;
     overflow:hidden;
-    border-radius:22px;
-    background:#ede4df;
-    box-shadow:0 14px 34px rgba(90,60,60,.10);
+    border-radius:24px;
+    background:#f0e3de;
+    box-shadow:0 16px 34px rgba(102,72,72,.10);
 }
 
 .slides{
@@ -112,33 +112,38 @@ nav a:hover{
 .slide{
     min-width:100%;
     box-sizing:border-box;
-    background:#ede4df;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#f0e3de;
 }
 
 .slide img{
     width:100%;
-    height:460px;
-    object-fit:cover;
+    height:430px;
+    object-fit:contain;
     display:block;
+    background:#f0e3de;
 }
 
 .carousel-btn{
     position:absolute;
     top:50%;
     transform:translateY(-50%);
-    background:rgba(255,255,255,.72);
+    background:rgba(255,255,255,.60);
     border:none;
-    width:42px;
-    height:42px;
+    width:38px;
+    height:38px;
     border-radius:50%;
-    font-size:1.2rem;
+    font-size:1rem;
     cursor:pointer;
-    color:#5a433f;
-    box-shadow:0 4px 12px rgba(0,0,0,.12);
+    color:#6b4f4d;
+    box-shadow:0 4px 12px rgba(0,0,0,.10);
+    transition:background .2s ease;
 }
 
 .carousel-btn:hover{
-    background:rgba(255,255,255,.9);
+    background:rgba(255,255,255,.82);
 }
 
 .prev{
@@ -153,21 +158,21 @@ nav a:hover{
     display:flex;
     justify-content:center;
     gap:10px;
-    margin-top:16px;
+    margin-top:14px;
 }
 
 .dot{
-    width:10px;
-    height:10px;
+    width:9px;
+    height:9px;
     border-radius:50%;
     border:none;
-    background:#ccb8b0;
+    background:#d4b8b4;
     cursor:pointer;
     padding:0;
 }
 
 .dot.active{
-    background:#8a6672;
+    background:#9a6b7a;
 }
 
 .content-grid{
@@ -175,78 +180,99 @@ nav a:hover{
     margin:0 auto;
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:26px;
+    gap:24px;
 }
 
 .card{
-    background:#f8f3ef;
-    border:1px solid #e1d1c8;
-    border-radius:18px;
-    padding:24px 22px;
-    box-shadow:0 8px 20px rgba(90,60,60,.05);
+    background:rgba(255,255,255,.42);
+    border:1px solid #e7d4cd;
+    border-radius:22px;
+    padding:26px 24px;
+    box-shadow:0 10px 24px rgba(102,72,72,.05);
 }
 
 .card h3{
     margin:0 0 14px;
-    font-size:1.35rem;
+    font-size:1.3rem;
     font-weight:normal;
-    color:#5a433f;
+    color:#634846;
 }
 
 .card p{
     margin:0;
-    color:#64534e;
+    color:#675451;
     font-size:1rem;
 }
 
 .pricing-section{
     max-width:860px;
-    margin:54px auto 0;
+    margin:46px auto 0;
 }
 
 .pricing-section h2{
-    font-size:1.85rem;
+    font-size:1.8rem;
     font-weight:normal;
-    margin:0 0 18px;
-    color:#5a433f;
+    margin:0 0 16px;
+    color:#634846;
 }
 
 .pricing-section p{
-    margin:0 0 22px;
-    color:#64534e;
+    margin:0 0 20px;
+    color:#675451;
     font-size:1rem;
 }
 
 .pricing-sheet{
-    background:#f8f3ef;
-    border:1px solid #e1d1c8;
-    border-radius:22px;
-    padding:16px;
-    box-shadow:0 12px 28px rgba(90,60,60,.08);
+    background:rgba(255,255,255,.45);
+    border:1px solid #e6d3cc;
+    border-radius:24px;
+    padding:14px;
+    box-shadow:0 14px 28px rgba(102,72,72,.07);
 }
 
 .pricing-sheet img{
     width:100%;
     display:block;
-    border-radius:14px;
+    border-radius:16px;
 }
 
-.notes-link,
+.notes-link{
+    max-width:860px;
+    margin:28px auto 0;
+    font-size:1rem;
+    color:#675451;
+}
+
 .contact-link{
     max-width:860px;
-    margin:30px auto 0;
-    padding-top:8px;
-    font-size:1rem;
-    color:#64534e;
+    margin:18px auto 0;
+}
+
+.sms-button{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    background:rgba(255,255,255,.55);
+    border:1px solid #e2cbc3;
+    box-shadow:0 8px 18px rgba(102,72,72,.08);
+    font-size:1.1rem;
+    text-decoration:none;
+}
+
+.sms-button:hover{
+    background:rgba(255,255,255,.78);
 }
 
 footer{
     text-align:center;
     padding:30px 24px 46px;
     font-size:.95rem;
-    color:#9b7d7d;
-    border-top:1px solid #dbc9c1;
-    background:#f7f1ed;
+    color:#a08282;
+    border-top:1px solid #e2cbc3;
+    background:#f9f1ee;
 }
 
 @media (max-width:800px){
@@ -291,16 +317,11 @@ footer{
     }
 
     .slide img{
-        height:320px;
-    }
-
-    .carousel-btn{
-        width:38px;
-        height:38px;
+        height:300px;
     }
 
     .card{
-        padding:20px 18px;
+        padding:22px 18px;
     }
 }
 </style>
@@ -394,9 +415,7 @@ footer{
     </div>
 
     <div class="contact-link">
-        <p>
-            To book, <a href="sms:4802485491">text 480-248-5491</a>.
-        </p>
+        <a class="sms-button" href="sms:4802485491" aria-label="Text to book">✉</a>
     </div>
 
 </div>
