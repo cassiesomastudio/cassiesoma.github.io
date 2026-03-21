@@ -9,31 +9,34 @@
 body{
     margin:0;
     font-family:Georgia, serif;
-    background:#f6f6f4;
-    color:#222;
+    background:#f4f0ec;
+    color:#2f2727;
     line-height:1.6;
 }
 
 header{
     text-align:center;
-    padding:80px 20px 40px 20px;
+    padding:90px 20px 50px 20px;
 }
 
 h1{
-    font-size:42px;
+    font-size:44px;
     letter-spacing:1px;
-    margin-bottom:10px;
+    margin-bottom:12px;
+    font-weight:normal;
+    color:#2d2323;
 }
 
 .subtitle{
     font-size:18px;
-    color:#666;
+    color:#7a6666;
+    letter-spacing:0.4px;
 }
 
 .container{
-    max-width:850px;
+    max-width:860px;
     margin:auto;
-    padding:60px 20px;
+    padding:60px 24px 90px 24px;
 }
 
 section{
@@ -42,9 +45,10 @@ section{
 
 h2{
     font-weight:normal;
-    font-size:28px;
-    margin-bottom:20px;
+    font-size:30px;
+    margin-bottom:24px;
     text-align:center;
+    color:#3b2e2e;
 }
 
 p{
@@ -56,54 +60,62 @@ p{
     margin:0 auto;
 }
 
+.intro-text p{
+    color:#4b3f3f;
+}
+
 .doorways{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:24px;
-    margin-top:50px;
+    gap:28px;
+    margin-top:55px;
 }
 
 .door{
     display:block;
     text-decoration:none;
-    color:#222;
-    border:1px solid #ddd;
-    padding:40px 30px;
-    border-radius:8px;
-    background:#fafaf8;
+    color:#2f2727;
+    border:1px solid #dccfc8;
+    padding:42px 32px;
+    border-radius:14px;
+    background:#fbf8f5;
+    box-shadow:0 8px 24px rgba(80, 56, 56, 0.05);
     transition:all 0.25s ease;
 }
 
 .door:hover{
-    transform:translateY(-2px);
-    border-color:#bbb;
-    background:#fdfdfb;
+    transform:translateY(-3px);
+    border-color:#c9b6b0;
+    background:#fffdfb;
+    box-shadow:0 12px 28px rgba(80, 56, 56, 0.08);
 }
 
 .door h3{
     font-weight:normal;
-    font-size:26px;
+    font-size:27px;
     margin-top:0;
     margin-bottom:12px;
+    color:#3d2d2d;
 }
 
 .door p{
     margin:0;
-    color:#555;
+    color:#6a5a5a;
     font-size:16px;
 }
 
 footer{
     text-align:center;
-    padding:40px;
+    padding:36px;
     font-size:14px;
-    color:#777;
-    border-top:1px solid #ddd;
+    color:#8a7777;
+    border-top:1px solid #ddd1cb;
+    background:#f7f3ef;
 }
 
 @media (max-width:700px){
     h1{
-        font-size:34px;
+        font-size:35px;
     }
 
     .subtitle{
@@ -115,7 +127,7 @@ footer{
     }
 
     .door{
-        padding:32px 24px;
+        padding:34px 24px;
     }
 }
 </style>
