@@ -9,49 +9,53 @@
 body{
     margin:0;
     font-family:Georgia, serif;
-    background:#f6f6f4;
-    color:#222;
-    line-height:1.6;
+    background:#f3ede6;
+    color:#2f2522;
+    line-height:1.7;
 }
 
 header{
     text-align:center;
-    padding:80px 20px 40px 20px;
+    padding:90px 20px 40px 20px;
 }
 
 h1{
-    font-size:42px;
+    font-size:44px;
     letter-spacing:1px;
-    margin-bottom:10px;
+    margin-bottom:12px;
+    font-weight:normal;
+    color:#352724;
 }
 
 .subtitle{
     font-size:18px;
-    color:#666;
+    color:#7b625a;
+    letter-spacing:0.4px;
 }
 
 nav{
     text-align:center;
-    padding:20px;
-    border-top:1px solid #ddd;
-    border-bottom:1px solid #ddd;
+    padding:18px 20px;
+    border-top:1px solid #d7c8bc;
+    border-bottom:1px solid #d7c8bc;
+    background:#f7f1eb;
 }
 
 nav a{
     margin:0 15px;
     text-decoration:none;
-    color:#444;
+    color:#6b5148;
     font-size:15px;
 }
 
 nav a:hover{
-    color:black;
+    color:#2f2522;
 }
 
 .container{
-    max-width:800px;
+    max-width:860px;
     margin:auto;
-    padding:60px 20px;
+    padding:60px 24px 90px 24px;
 }
 
 section{
@@ -60,18 +64,33 @@ section{
 
 h2{
     font-weight:normal;
-    font-size:28px;
-    margin-bottom:20px;
+    font-size:30px;
+    margin-bottom:22px;
+    color:#3a2b27;
 }
 
 p{
     font-size:17px;
+    color:#4a3a35;
+}
+
+.still-image{
+    text-align:center;
+    margin-bottom:34px;
+}
+
+.still-image img{
+    width:220px;
+    max-width:72%;
+    height:auto;
+    border-radius:18px;
+    box-shadow:0 12px 30px rgba(60, 40, 30, 0.12);
 }
 
 .carousel{
     overflow:hidden;
     width:100%;
-    padding:20px 0;
+    padding:16px 0 8px 0;
 }
 
 .carousel-track{
@@ -82,10 +101,11 @@ p{
 }
 
 .carousel-track img{
-    height:220px;
+    height:240px;
     width:auto;
     object-fit:cover;
-    border-radius:6px;
+    border-radius:10px;
+    box-shadow:0 10px 24px rgba(60, 40, 30, 0.10);
 }
 
 @keyframes scroll{
@@ -97,12 +117,50 @@ p{
     }
 }
 
+.writing-list{
+    padding-left:22px;
+    color:#4a3a35;
+}
+
+.writing-list li{
+    margin-bottom:10px;
+    font-size:17px;
+}
+
+a{
+    color:#744d45;
+}
+
+a:hover{
+    color:#4b312c;
+}
+
 footer{
     text-align:center;
-    padding:40px;
+    padding:36px;
     font-size:14px;
-    color:#777;
-    border-top:1px solid #ddd;
+    color:#8a746b;
+    border-top:1px solid #d7c8bc;
+    background:#f7f1eb;
+}
+
+@media (max-width:700px){
+    h1{
+        font-size:35px;
+    }
+
+    .subtitle{
+        font-size:16px;
+    }
+
+    .carousel-track img{
+        height:200px;
+    }
+
+    .still-image img{
+        width:180px;
+        max-width:68%;
+    }
 }
 </style>
 </head>
@@ -126,29 +184,26 @@ footer{
     <section id="photography">
         <h2>Photography</h2>
 
+        <div class="still-image">
+            <img src="CB623C08-A76F-4345-9623-93044537CCFD.png" alt="Portrait of Cassie Soma">
+        </div>
+
         <div class="carousel">
             <div class="carousel-track">
-
-                <img src="CB623C08-A76F-4345-9623-93044537CCFD.png">
-                <img src="IMG_7169.jpeg">
-                <img src="IMG_7428.jpeg">
-
+                <img src="IMG_7169.jpeg" alt="Art photograph">
+                <img src="IMG_7428.jpeg" alt="Art photograph">
                 <a href="https://substack.com/@cassiesomastudio/note/p-191442260" target="_blank">
-                    <img src="IMG_7404.jpeg">
+                    <img src="IMG_7404.jpeg" alt="Linked art photograph">
                 </a>
-
-                <img src="CB623C08-A76F-4345-9623-93044537CCFD.png">
-                <img src="IMG_7169.jpeg">
-                <img src="IMG_7428.jpeg">
-
+                <img src="IMG_7169.jpeg" alt="Art photograph">
+                <img src="IMG_7428.jpeg" alt="Art photograph">
                 <a href="https://substack.com/@cassiesomastudio/note/p-191442260" target="_blank">
-                    <img src="IMG_7404.jpeg">
+                    <img src="IMG_7404.jpeg" alt="Linked art photograph">
                 </a>
-
             </div>
         </div>
 
-        <p style="margin-top:20px;">
+        <p style="margin-top:24px;">
             A developing body of photographic work exploring femininity, presence, and the relationship between subject and self.
         </p>
     </section>
@@ -160,7 +215,7 @@ footer{
             Selected essays and reflections:
         </p>
 
-        <ul>
+        <ul class="writing-list">
             <li>When the Mirror Stopped Arguing With Me</li>
             <li>After the Last Appointment</li>
             <li>Dust Travels</li>
