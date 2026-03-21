@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grooming Craft | Cassie Soma Studio</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Georgia, serif;
+    background:#f6f6f4;
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    text-align:center;
+    padding:80px 20px 40px 20px;
+}
+
+h1{
+    font-size:42px;
+    letter-spacing:1px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    font-size:18px;
+    color:#666;
+}
+
+nav{
+    text-align:center;
+    padding:20px;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+}
+
+nav a{
+    margin:0 15px;
+    text-decoration:none;
+    color:#444;
+    font-size:15px;
+}
+
+nav a:hover{
+    color:black;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+section{
+    margin-bottom:80px;
+}
+
+h2{
+    font-weight:normal;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+p{
+    font-size:17px;
+}
+
+.carousel{
+    overflow:hidden;
+    width:100%;
+    padding:20px 0;
+}
+
+.carousel-track{
+    display:flex;
+    gap:20px;
+    width:max-content;
+    animation:scroll 60s linear infinite;
+}
+
+.carousel-track img{
+    height:220px;
+    width:auto;
+    object-fit:cover;
+    border-radius:6px;
+}
+
+@keyframes scroll{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
+
+.cta{
+    margin-top:30px;
+}
+
+.cta a{
+    text-decoration:none;
+    color:#222;
+    border-bottom:1px solid #999;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    font-size:14px;
+    color:#777;
+    border-top:1px solid #ddd;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Cassie Soma Studio</h1>
+    <div class="subtitle">
+        Grooming Craft
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="studio.html">Art Studio</a>
+</nav>
+
+<div class="container">
+
+    <section id="craft">
+        <h2>Grooming Craft</h2>
+
+        <p>
+            Dog grooming is both profession and practice — a study in patience, precision, and the quiet relationship between human and animal.
+        </p>
+
+        <p>
+            These experiences inform the essays and reflections collected in <em>Notes from the Grooming Table</em>.
+        </p>
+
+        <div class="carousel">
+            <div class="carousel-track">
+
+                <img src="IMG_7621.jpeg">
+                <img src="F05B9965-A540-4B0F-9697-633A63BEAAE0.png">
+                <img src="IMG_7621.jpeg">
+                <img src="F05B9965-A540-4B0F-9697-633A63BEAAE0.png">
+
+            </div>
+        </div>
+
+        <p class="cta">
+            <a href="sms:+14802485491">Text to schedule ✨</a>
+        </p>
+    </section>
+
+</div>
+
+<footer>
+    © Cassie Soma Studio
+</footer>
+
+</body>
+</html>
