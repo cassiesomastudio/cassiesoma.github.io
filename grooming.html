@@ -9,138 +9,295 @@
 body{
     margin:0;
     font-family:Georgia, serif;
-    background:#f3f1ec;
-    color:#2d2b28;
-    line-height:1.7;
+    background:#f4eee9;
+    color:#3f332f;
+    line-height:1.75;
 }
 
 header{
     text-align:center;
-    padding:90px 20px 40px 20px;
-    background:#ece8e1;
+    padding:70px 24px 34px;
+    background:#e9ddd6;
 }
 
 h1{
-    font-size:44px;
-    letter-spacing:1px;
-    margin-bottom:12px;
+    font-size:2.9rem;
     font-weight:normal;
-    color:#2f2c29;
+    margin:0 0 12px;
+    color:#5a433f;
+    letter-spacing:.02em;
 }
 
 .subtitle{
-    font-size:18px;
-    color:#6f6a63;
-    letter-spacing:0.4px;
+    font-size:1.08rem;
+    color:#7b625f;
 }
 
 nav{
     text-align:center;
-    padding:18px 20px;
-    border-top:1px solid #d7d1c8;
-    border-bottom:1px solid #d7d1c8;
-    background:#f8f6f2;
+    padding:16px 20px;
+    background:#f7f1ed;
+    border-top:1px solid #dbc9c1;
+    border-bottom:1px solid #dbc9c1;
 }
 
 nav a{
-    margin:0 15px;
+    margin:0 14px;
     text-decoration:none;
-    color:#5e5a54;
-    font-size:15px;
+    color:#7a5f5a;
+    font-size:.96rem;
+    letter-spacing:.03em;
 }
 
 nav a:hover{
-    color:#2d2b28;
+    color:#5a433f;
 }
 
 .container{
-    max-width:860px;
-    margin:auto;
-    padding:60px 24px 90px 24px;
+    max-width:980px;
+    margin:0 auto;
+    padding:56px 24px 80px;
 }
 
-section{
-    margin-bottom:80px;
+.intro{
+    max-width:760px;
+    margin:0 auto 38px;
+    text-align:left;
 }
 
-h2{
+.intro h2{
+    font-size:2rem;
     font-weight:normal;
-    font-size:30px;
-    margin-bottom:22px;
-    color:#36322e;
+    margin:0 0 18px;
+    color:#5a433f;
 }
 
-p{
-    font-size:17px;
-    color:#4a4640;
+.intro p{
+    font-size:1.08rem;
+    color:#5f4d49;
+    margin:0 0 18px;
+}
+
+.intro a,
+.notes-link a{
+    color:#8a6672;
+    text-decoration:none;
+}
+
+.intro a:hover,
+.notes-link a:hover{
+    color:#5a433f;
+}
+
+.carousel-wrap{
+    max-width:860px;
+    margin:0 auto 54px;
 }
 
 .carousel{
+    position:relative;
     overflow:hidden;
-    width:100%;
-    padding:18px 0 10px 0;
+    border-radius:22px;
+    background:#ede4df;
+    box-shadow:0 14px 34px rgba(90,60,60,.10);
 }
 
-.carousel-track{
+.slides{
     display:flex;
-    gap:20px;
-    width:max-content;
-    animation:scroll 60s linear infinite;
+    transition:transform .45s ease;
 }
 
-.carousel-track img{
-    height:240px;
-    width:auto;
+.slide{
+    min-width:100%;
+    box-sizing:border-box;
+    background:#ede4df;
+}
+
+.slide img{
+    width:100%;
+    height:620px;
     object-fit:cover;
-    border-radius:10px;
-    box-shadow:0 10px 24px rgba(50, 45, 40, 0.10);
+    display:block;
 }
 
-@keyframes scroll{
-    from{
-        transform:translateX(0);
-    }
-    to{
-        transform:translateX(-50%);
-    }
+.carousel-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(255,255,255,.72);
+    border:none;
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    font-size:1.2rem;
+    cursor:pointer;
+    color:#5a433f;
+    box-shadow:0 4px 12px rgba(0,0,0,.12);
 }
 
-.cta{
-    margin-top:34px;
+.carousel-btn:hover{
+    background:rgba(255,255,255,.9);
 }
 
-.cta a{
-    text-decoration:none;
-    color:#4f4a44;
-    border-bottom:1px solid #8e877f;
-    padding-bottom:2px;
+.prev{
+    left:16px;
 }
 
-.cta a:hover{
-    color:#2d2b28;
-    border-bottom-color:#5f5952;
+.next{
+    right:16px;
+}
+
+.dots{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:16px;
+}
+
+.dot{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    border:none;
+    background:#ccb8b0;
+    cursor:pointer;
+    padding:0;
+}
+
+.dot.active{
+    background:#8a6672;
+}
+
+.content-grid{
+    max-width:860px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:26px;
+}
+
+.card{
+    background:#f8f3ef;
+    border:1px solid #e1d1c8;
+    border-radius:18px;
+    padding:24px 22px;
+    box-shadow:0 8px 20px rgba(90,60,60,.05);
+}
+
+.card h3{
+    margin:0 0 14px;
+    font-size:1.35rem;
+    font-weight:normal;
+    color:#5a433f;
+}
+
+.card p{
+    margin:0;
+    color:#64534e;
+    font-size:1rem;
+}
+
+.pricing-section{
+    max-width:860px;
+    margin:54px auto 0;
+}
+
+.pricing-section h2{
+    font-size:1.85rem;
+    font-weight:normal;
+    margin:0 0 18px;
+    color:#5a433f;
+}
+
+.pricing-section p{
+    margin:0 0 22px;
+    color:#64534e;
+    font-size:1rem;
+}
+
+.pricing-sheet{
+    background:#f8f3ef;
+    border:1px solid #e1d1c8;
+    border-radius:22px;
+    padding:16px;
+    box-shadow:0 12px 28px rgba(90,60,60,.08);
+}
+
+.pricing-sheet img{
+    width:100%;
+    display:block;
+    border-radius:14px;
+}
+
+.notes-link{
+    max-width:860px;
+    margin:34px auto 0;
+    padding-top:8px;
+    font-size:1rem;
+    color:#64534e;
 }
 
 footer{
     text-align:center;
-    padding:36px;
-    font-size:14px;
-    color:#807a73;
-    border-top:1px solid #d7d1c8;
-    background:#f8f6f2;
+    padding:30px 24px 46px;
+    font-size:.95rem;
+    color:#9b7d7d;
+    border-top:1px solid #dbc9c1;
+    background:#f7f1ed;
+}
+
+@media (max-width:800px){
+    .slide img{
+        height:500px;
+    }
+
+    .content-grid{
+        grid-template-columns:1fr;
+    }
 }
 
 @media (max-width:700px){
+    header{
+        padding:54px 22px 28px;
+    }
+
     h1{
-        font-size:35px;
+        font-size:2.3rem;
     }
 
     .subtitle{
-        font-size:16px;
+        font-size:1rem;
     }
 
-    .carousel-track img{
-        height:200px;
+    nav a{
+        margin:0 10px;
+        font-size:.92rem;
+    }
+
+    .container{
+        padding:40px 22px 64px;
+    }
+
+    .intro h2,
+    .pricing-section h2{
+        font-size:1.7rem;
+    }
+
+    .intro p{
+        font-size:1rem;
+    }
+
+    .slide img{
+        height:400px;
+    }
+
+    .carousel-btn{
+        width:40px;
+        height:40px;
+    }
+
+    .card{
+        padding:20px 18px;
     }
 }
 </style>
@@ -150,50 +307,122 @@ footer{
 
 <header>
     <h1>Cassie Soma Studio</h1>
-    <div class="subtitle">
-        Grooming Craft
-    </div>
+    <div class="subtitle">Boutique Grooming · Craft · Quiet Care</div>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="studio.html">Art Studio</a>
+    <a href="art-studio.html">Art Studio</a>
 </nav>
 
 <div class="container">
 
-    <section id="craft">
+    <section class="intro">
         <h2>Grooming Craft</h2>
-
         <p>
             Dog grooming is both profession and practice — a study in patience, precision, and the quiet relationship between human and animal.
         </p>
-
         <p>
-            These experiences inform the essays and reflections collected in <em>Notes from the Grooming Table</em>.
+            These experiences inform the essays and reflections collected in <a href="#">Notes from the Grooming Table</a>.
         </p>
-
-        <div class="carousel">
-            <div class="carousel-track">
-
-                <img src="IMG_7621.jpeg" alt="Dog grooming work">
-                <img src="F05B9965-A540-4B0F-9697-633A63BEAAE0.png" alt="Dog grooming work">
-                <img src="IMG_7621.jpeg" alt="Dog grooming work">
-                <img src="F05B9965-A540-4B0F-9697-633A63BEAAE0.png" alt="Dog grooming work">
-
-            </div>
-        </div>
-
-        <p class="cta">
-            <a href="sms:+14802485491">Text to schedule ✨</a>
+        <p>
+            We provide boutique, time-efficient mobile grooming delivered privately to your door. Our studio operates on quiet shore power with solar assist, creating a calm, environmentally conscious experience for you and your dog.
         </p>
     </section>
+
+    <section class="carousel-wrap">
+        <div class="carousel">
+            <div class="slides" id="slides">
+                <div class="slide"><img src="2DF3F561-E25B-4418-A810-DDFC16E0C30D.png" alt="Cassie with a small dog in the grooming studio"></div>
+                <div class="slide"><img src="A8F965FD-1437-4F1B-BF84-3F0948E08AC0.png" alt="Freshly groomed apricot poodle in the mobile salon"></div>
+                <div class="slide"><img src="C88E435C-868D-430B-8385-791E7B0E6A61.png" alt="Freshly groomed schnauzer in the mobile salon"></div>
+                <div class="slide"><img src="FDA95605-D9C9-4C95-9924-DC86E0DB7418.png" alt="Creative zebra-inspired dog grooming style"></div>
+                <div class="slide"><img src="826B28B9-B09B-4597-BE36-D57BC7257F28.png" alt="White poodle with a playful pink topknot"></div>
+                <div class="slide"><img src="05CE890A-AC71-4A28-AD6D-F88FCB5E380E.png" alt="Cassie Soma Paw Spa circular logo"></div>
+            </div>
+
+            <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous slide">&#10094;</button>
+            <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next slide">&#10095;</button>
+        </div>
+
+        <div class="dots" id="dots">
+            <button class="dot active" onclick="goToSlide(0)" aria-label="Go to slide 1"></button>
+            <button class="dot" onclick="goToSlide(1)" aria-label="Go to slide 2"></button>
+            <button class="dot" onclick="goToSlide(2)" aria-label="Go to slide 3"></button>
+            <button class="dot" onclick="goToSlide(3)" aria-label="Go to slide 4"></button>
+            <button class="dot" onclick="goToSlide(4)" aria-label="Go to slide 5"></button>
+            <button class="dot" onclick="goToSlide(5)" aria-label="Go to slide 6"></button>
+        </div>
+    </section>
+
+    <section class="content-grid">
+        <div class="card">
+            <h3>Boutique Mobile Service</h3>
+            <p>
+                One-on-one appointments, a private setting, and a quiet, carefully maintained mobile studio allow each dog to be groomed with focused attention rather than rushed through a high-volume environment.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Craft & Continuity</h3>
+            <p>
+                Grooming is not only about appearance, but about comfort, routine, coat maintenance, and trust. The work is shaped over time through consistency, observation, and a relationship built appointment by appointment.
+            </p>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <h2>Service & Pricing</h2>
+        <p>
+            For current service structure, maintenance scheduling, and pricing, please see the information sheet below.
+        </p>
+
+        <div class="pricing-sheet">
+            <img src="40ABB3B7-109F-4D0F-9667-A91A26B4DCE1.png" alt="Cassie Soma Paw Spa pricing and service sheet">
+        </div>
+    </section>
+
+    <div class="notes-link">
+        <p>
+            Looking for the writing side of this work? Visit <a href="#">Notes from the Grooming Table</a>.
+        </p>
+    </div>
 
 </div>
 
 <footer>
     © Cassie Soma Studio
 </footer>
+
+<script>
+let currentSlide = 0;
+const slides = document.getElementById('slides');
+const dots = document.querySelectorAll('.dot');
+const totalSlides = dots.length;
+
+function updateCarousel(){
+    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlide);
+    });
+}
+
+function moveSlide(direction){
+    currentSlide += direction;
+    if(currentSlide < 0){
+        currentSlide = totalSlides - 1;
+    }
+    if(currentSlide >= totalSlides){
+        currentSlide = 0;
+    }
+    updateCarousel();
+}
+
+function goToSlide(index){
+    currentSlide = index;
+    updateCarousel();
+}
+</script>
 
 </body>
 </html>
