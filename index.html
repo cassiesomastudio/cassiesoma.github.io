@@ -3,13 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Cassie Soma Studio</title>
 
 <style>
 body{
     margin:0;
-    font-family: Georgia, serif;
+    font-family:Georgia, serif;
     background:#f6f6f4;
     color:#222;
     line-height:1.6;
@@ -31,26 +30,8 @@ h1{
     color:#666;
 }
 
-nav{
-    text-align:center;
-    padding:20px;
-    border-top:1px solid #ddd;
-    border-bottom:1px solid #ddd;
-}
-
-nav a{
-    margin:0 15px;
-    text-decoration:none;
-    color:#444;
-    font-size:15px;
-}
-
-nav a:hover{
-    color:black;
-}
-
 .container{
-    max-width:800px;
+    max-width:850px;
     margin:auto;
     padding:60px 20px;
 }
@@ -63,41 +44,53 @@ h2{
     font-weight:normal;
     font-size:28px;
     margin-bottom:20px;
+    text-align:center;
 }
 
 p{
     font-size:17px;
 }
 
-/* ✨ CAROUSEL */
-
-.carousel{
-    overflow:hidden;
-    width:100%;
-    padding:20px 0;
+.intro-text{
+    max-width:720px;
+    margin:0 auto;
 }
 
-.carousel-track{
-    display:flex;
-    gap:20px;
-    width:max-content;
-    animation: scroll 60s linear infinite;
+.doorways{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+    margin-top:50px;
 }
 
-.carousel-track img{
-    height:220px;
-    width:auto;
-    object-fit:cover;
-    border-radius:6px;
+.door{
+    display:block;
+    text-decoration:none;
+    color:#222;
+    border:1px solid #ddd;
+    padding:40px 30px;
+    border-radius:8px;
+    background:#fafaf8;
+    transition:all 0.25s ease;
 }
 
-@keyframes scroll{
-    from{
-        transform:translateX(0);
-    }
-    to{
-        transform:translateX(-50%);
-    }
+.door:hover{
+    transform:translateY(-2px);
+    border-color:#bbb;
+    background:#fdfdfb;
+}
+
+.door h3{
+    font-weight:normal;
+    font-size:26px;
+    margin-top:0;
+    margin-bottom:12px;
+}
+
+.door p{
+    margin:0;
+    color:#555;
+    font-size:16px;
 }
 
 footer{
@@ -107,148 +100,72 @@ footer{
     color:#777;
     border-top:1px solid #ddd;
 }
+
+@media (max-width:700px){
+    h1{
+        font-size:34px;
+    }
+
+    .subtitle{
+        font-size:16px;
+    }
+
+    .doorways{
+        grid-template-columns:1fr;
+    }
+
+    .door{
+        padding:32px 24px;
+    }
+}
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Cassie Soma Studio</h1>
-<div class="subtitle">
-Photography · Writing · Embodied Art · Grooming Craft
-</div>
+    <h1>Cassie Soma Studio</h1>
+    <div class="subtitle">
+        Photography · Writing · Embodied Art · Grooming Craft
+    </div>
 </header>
-
-<nav>
-<a href="#about">About</a>
-<a href="#photography">Photography</a>
-<a href="#writing">Writing</a>
-<a href="#craft">Craft</a>
-<a href="#contact">Contact</a>
-</nav>
 
 <div class="container">
 
-<section id="about">
-<h2>About</h2>
+    <section id="about">
+        <h2>About</h2>
 
-<p>
-Cassie Soma is an artist and writer exploring embodiment, femininity, and
-the quiet rituals of daily life.
-</p>
+        <div class="intro-text">
+            <p>
+                Cassie Soma is an artist and writer exploring embodiment, femininity, and the quiet rituals of daily life.
+            </p>
 
-<p>
-Her work moves between photography, essays, and the lived craft of dog
-grooming — observing the body, presence, and the small moments where
-identity settles into place.
-</p>
+            <p>
+                Her work moves between photography, essays, and the lived craft of dog grooming — observing the body, presence, and the small moments where identity settles into place.
+            </p>
 
-<p>
-Cassie writes regularly on Substack and shares ongoing photographic
-series documenting a slow-burn artistic life.
-</p>
-</section>
+            <p>
+                Cassie writes regularly on Substack and shares ongoing photographic series documenting a slow-burn artistic life.
+            </p>
+        </div>
 
-<section id="photography">
-<h2>Photography</h2>
+        <div class="doorways">
+            <a href="studio.html" class="door">
+                <h3>Art Studio</h3>
+                <p>Photography, writing, and embodied work.</p>
+            </a>
 
-<div class="carousel">
-<div class="carousel-track">
-
-<img src="CB623C08-A76F-4345-9623-93044537CCFD.png">
-
-<img src="IMG_7169.jpeg">
-
-<img src="IMG_7428.jpeg">
-
-<a href="https://substack.com/@cassiesomastudio/note/p-191442260" target="_blank">
-<img src="IMG_7404.jpeg">
-</a>
-
-<!-- duplicate for seamless loop -->
-
-<img src="CB623C08-A76F-4345-9623-93044537CCFD.png">
-
-<img src="IMG_7169.jpeg">
-
-<img src="IMG_7428.jpeg">
-
-<a href="https://substack.com/@cassiesomastudio/note/p-191442260" target="_blank">
-<img src="IMG_7404.jpeg">
-</a>
-
-</div>
-</div>
-
-<p style="margin-top:20px;">
-A developing body of photographic work exploring femininity,
-presence, and the relationship between subject and self.
-</p>
-</section>
-
-<section id="writing">
-<h2>Writing</h2>
-
-<p>
-Selected essays and reflections:
-</p>
-
-<ul>
-<li>When the Mirror Stopped Arguing With Me</li>
-<li>After the Last Appointment</li>
-<li>Dust Travels</li>
-<li>Notes from the Grooming Table</li>
-</ul>
-
-<p>
-Full writing archive available on 
-<a href="https://cassiesomastudio.substack.com" target="_blank">
-Substack
-</a>.
-</p>
-</section>
-
-<section id="craft">
-<h2>Craft</h2>
-
-<p>
-Dog grooming is both profession and practice — a study in patience,
-precision, and the quiet relationship between human and animal.
-</p>
-
-<p>
-These experiences inform the essays and reflections collected in
-<em>Notes from the Grooming Table</em>.
-</p>
-
-<img src="IMG_7621.jpeg" style="width:100%; margin-top:20px; border-radius:6px;">
-
-<img src="F05B9965-A540-4B0F-9697-633A63BEAAE0.png" style="width:100%; margin-top:20px; border-radius:6px;">
-
-</section>
-
-<section id="contact">
-<h2>Contact</h2>
-
-<p>
-For writing and ongoing work, visit 
-<a href="https://cassiesomastudio.substack.com" target="_blank">Substack</a>.
-</p>
-
-<p>
-For grooming inquiries, you're welcome to reach out.
-</p>
-
-<p>
-<a href="sms:+14802485491">Text to schedule ✨</a>
-</p>
-
-</section>
+            <a href="grooming.html" class="door">
+                <h3>Grooming Craft</h3>
+                <p>Boutique mobile grooming with calm, attentive care.</p>
+            </a>
+        </div>
+    </section>
 
 </div>
 
 <footer>
-© Cassie Soma Studio
+    © Cassie Soma Studio
 </footer>
 
 </body>
