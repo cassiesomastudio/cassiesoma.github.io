@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Art Studio | Cassie Soma Studio</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Georgia, serif;
+    background:#f6f6f4;
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    text-align:center;
+    padding:80px 20px 40px 20px;
+}
+
+h1{
+    font-size:42px;
+    letter-spacing:1px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    font-size:18px;
+    color:#666;
+}
+
+nav{
+    text-align:center;
+    padding:20px;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+}
+
+nav a{
+    margin:0 15px;
+    text-decoration:none;
+    color:#444;
+    font-size:15px;
+}
+
+nav a:hover{
+    color:black;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+section{
+    margin-bottom:80px;
+}
+
+h2{
+    font-weight:normal;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+p{
+    font-size:17px;
+}
+
+.carousel{
+    overflow:hidden;
+    width:100%;
+    padding:20px 0;
+}
+
+.carousel-track{
+    display:flex;
+    gap:20px;
+    width:max-content;
+    animation:scroll 60s linear infinite;
+}
+
+.carousel-track img{
+    height:220px;
+    width:auto;
+    object-fit:cover;
+    border-radius:6px;
+}
+
+@keyframes scroll{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    font-size:14px;
+    color:#777;
+    border-top:1px solid #ddd;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Cassie Soma Studio</h1>
+    <div class="subtitle">
+        Photography · Writing · Embodied Art
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="grooming.html">Grooming Craft</a>
+</nav>
+
+<div class="container">
+
+    <section id="photography">
+        <h2>Photography</h2>
+
+        <div class="carousel">
+            <div class="carousel-track">
+
+                <img src="CB623C08-A76F-4345-9623-93044537CCFD.png">
+                <img src="IMG_7169.jpeg">
+                <img src="IMG_7428.jpeg">
+
+                <a href="https://substack.com/@cassiesomastudio/note/p-191442260" target="_blank">
+                    <img src="IMG_7404.jpeg">
+                </a>
+
+                <img src="CB623C08-A76F-4345-9623-93044537CCFD.png">
+                <img src="IMG_7169.jpeg">
+                <img src="IMG_7428.jpeg">
+
+                <a href="https://substack.com/@cassiesomastudio/note/p-191442260" target="_blank">
+                    <img src="IMG_7404.jpeg">
+                </a>
+
+            </div>
+        </div>
+
+        <p style="margin-top:20px;">
+            A developing body of photographic work exploring femininity, presence, and the relationship between subject and self.
+        </p>
+    </section>
+
+    <section id="writing">
+        <h2>Writing</h2>
+
+        <p>
+            Selected essays and reflections:
+        </p>
+
+        <ul>
+            <li>When the Mirror Stopped Arguing With Me</li>
+            <li>After the Last Appointment</li>
+            <li>Dust Travels</li>
+            <li>Notes from the Grooming Table</li>
+        </ul>
+
+        <p>
+            Full writing archive available on
+            <a href="https://cassiesomastudio.substack.com" target="_blank">Substack</a>.
+        </p>
+    </section>
+
+</div>
+
+<footer>
+    © Cassie Soma Studio
+</footer>
+
+</body>
+</html>
