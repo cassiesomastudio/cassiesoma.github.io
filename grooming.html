@@ -245,7 +245,14 @@ nav a:hover{
 
 .contact-link{
     max-width:860px;
-    margin:18px auto 0;
+    margin:24px auto 0;
+    text-align:center;
+}
+
+.booking-text{
+    margin-bottom:12px;
+    color:#675451;
+    font-size:1rem;
 }
 
 .sms-button{
@@ -358,25 +365,25 @@ footer{
     <section class="carousel-wrap">
         <div class="carousel">
             <div class="slides" id="slides">
-                <div class="slide"><img src="2DF3F561-E25B-4418-A810-DDFC16E0C30D.png" alt="Cassie with a small dog in the grooming studio"></div>
-                <div class="slide"><img src="A8F965FD-1437-4F1B-BF84-3F0948E08AC0.png" alt="Freshly groomed apricot poodle in the mobile salon"></div>
-                <div class="slide"><img src="C88E435C-868D-430B-8385-791E7B0E6A61.png" alt="Freshly groomed schnauzer in the mobile salon"></div>
-                <div class="slide"><img src="FDA95605-D9C9-4C95-9924-DC86E0DB7418.png" alt="Creative zebra-inspired dog grooming style"></div>
-                <div class="slide"><img src="826B28B9-B09B-4597-BE36-D57BC7257F28.png" alt="White poodle with a playful pink topknot"></div>
-                <div class="slide"><img src="05CE890A-AC71-4A28-AD6D-F88FCB5E380E.png" alt="Cassie Soma Paw Spa logo"></div>
+                <div class="slide"><img src="2DF3F561-E25B-4418-A810-DDFC16E0C30D.png"></div>
+                <div class="slide"><img src="A8F965FD-1437-4F1B-BF84-3F0948E08AC0.png"></div>
+                <div class="slide"><img src="C88E435C-868D-430B-8385-791E7B0E6A61.png"></div>
+                <div class="slide"><img src="FDA95605-D9C9-4C95-9924-DC86E0DB7418.png"></div>
+                <div class="slide"><img src="826B28B9-B09B-4597-BE36-D57BC7257F28.png"></div>
+                <div class="slide"><img src="05CE890A-AC71-4A28-AD6D-F88FCB5E380E.png"></div>
             </div>
 
-            <button class="carousel-btn prev" onclick="moveSlide(-1)" aria-label="Previous slide">&#10094;</button>
-            <button class="carousel-btn next" onclick="moveSlide(1)" aria-label="Next slide">&#10095;</button>
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
         </div>
 
         <div class="dots" id="dots">
-            <button class="dot active" onclick="goToSlide(0)" aria-label="Go to slide 1"></button>
-            <button class="dot" onclick="goToSlide(1)" aria-label="Go to slide 2"></button>
-            <button class="dot" onclick="goToSlide(2)" aria-label="Go to slide 3"></button>
-            <button class="dot" onclick="goToSlide(3)" aria-label="Go to slide 4"></button>
-            <button class="dot" onclick="goToSlide(4)" aria-label="Go to slide 5"></button>
-            <button class="dot" onclick="goToSlide(5)" aria-label="Go to slide 6"></button>
+            <button class="dot active" onclick="goToSlide(0)"></button>
+            <button class="dot" onclick="goToSlide(1)"></button>
+            <button class="dot" onclick="goToSlide(2)"></button>
+            <button class="dot" onclick="goToSlide(3)"></button>
+            <button class="dot" onclick="goToSlide(4)"></button>
+            <button class="dot" onclick="goToSlide(5)"></button>
         </div>
     </section>
 
@@ -403,7 +410,7 @@ footer{
         </p>
 
         <div class="pricing-sheet">
-            <img src="40ABB3B7-109F-4D0F-9667-A91A26B4DCE1.png" alt="Cassie Soma Paw Spa pricing and service sheet">
+            <img src="40ABB3B7-109F-4D0F-9667-A91A26B4DCE1.png">
         </div>
     </section>
 
@@ -415,7 +422,10 @@ footer{
     </div>
 
     <div class="contact-link">
-        <a class="sms-button" href="sms:4802485491" aria-label="Text to book">✉</a>
+        <p class="booking-text">
+            Appointments are scheduled directly. Tap below to text and request a time.
+        </p>
+        <a class="sms-button" href="sms:4802485491">✉</a>
     </div>
 
 </div>
