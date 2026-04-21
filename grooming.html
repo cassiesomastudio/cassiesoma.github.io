@@ -1,468 +1,791 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Grooming Craft | Cassie Soma Studio</title>
 
 <style>
+
 body{
+
     margin:0;
+
     font-family:Georgia, serif;
+
     background:#f6ece8;
+
     color:#463735;
+
     line-height:1.75;
+
 }
 
 header{
+
     text-align:center;
+
     padding:70px 24px 34px;
+
     background:#eddcd6;
+
 }
 
 h1{
+
     font-size:2.9rem;
+
     font-weight:normal;
+
     margin:0 0 12px;
+
     color:#634846;
+
     letter-spacing:.02em;
+
 }
 
 .subtitle{
+
     font-size:1.08rem;
+
     color:#8a6a68;
+
 }
 
 nav{
+
     text-align:center;
+
     padding:16px 20px;
+
     background:#f9f1ee;
+
     border-top:1px solid #e2cbc3;
+
     border-bottom:1px solid #e2cbc3;
+
 }
 
 nav a{
+
     margin:0 14px;
+
     text-decoration:none;
+
     color:#846563;
+
     font-size:.96rem;
+
     letter-spacing:.03em;
+
 }
 
 nav a:hover{
+
     color:#634846;
+
 }
 
 .container{
+
     max-width:980px;
+
     margin:0 auto;
+
     padding:56px 24px 84px;
+
 }
 
 .intro{
+
     max-width:760px;
+
     margin:0 auto 34px;
+
     text-align:left;
+
 }
 
 .intro h2{
+
     font-size:2rem;
+
     font-weight:normal;
+
     margin:0 0 18px;
+
     color:#634846;
+
 }
 
 .intro p{
+
     font-size:1.08rem;
+
     color:#64514e;
+
     margin:0 0 18px;
+
 }
 
 .intro a,
+
 .notes-link a,
+
 .contact-link a{
+
     color:#9a6b7a;
+
     text-decoration:none;
+
 }
 
 .intro a:hover,
+
 .notes-link a:hover,
+
 .contact-link a:hover{
+
     color:#634846;
+
 }
 
 .carousel-wrap{
+
     max-width:660px;
+
     margin:0 auto 48px;
+
 }
 
 .carousel{
+
     position:relative;
+
     overflow:hidden;
+
     border-radius:24px;
+
     background:#f0e3de;
+
     box-shadow:0 16px 34px rgba(102,72,72,.10);
+
 }
 
 .slides{
+
     display:flex;
+
     transition:transform .45s ease;
+
 }
 
 .slide{
+
     min-width:100%;
+
     box-sizing:border-box;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
+
     background:#f0e3de;
+
 }
 
 .slide img{
+
     width:100%;
+
     height:430px;
+
     object-fit:contain;
+
     display:block;
+
     background:#f0e3de;
+
 }
 
 .carousel-btn{
+
     position:absolute;
+
     top:50%;
+
     transform:translateY(-50%);
+
     background:rgba(255,255,255,.60);
+
     border:none;
+
     width:38px;
+
     height:38px;
+
     border-radius:50%;
+
     font-size:1rem;
+
     cursor:pointer;
+
     color:#6b4f4d;
+
     box-shadow:0 4px 12px rgba(0,0,0,.10);
+
     transition:background .2s ease;
+
 }
 
 .carousel-btn:hover{
+
     background:rgba(255,255,255,.82);
+
 }
 
 .prev{
+
     left:14px;
+
 }
 
 .next{
+
     right:14px;
+
 }
 
 .dots{
+
     display:flex;
+
     justify-content:center;
+
     gap:10px;
+
     margin-top:14px;
+
 }
 
 .dot{
+
     width:9px;
+
     height:9px;
+
     border-radius:50%;
+
     border:none;
+
     background:#d4b8b4;
+
     cursor:pointer;
+
     padding:0;
+
 }
 
 .dot.active{
+
     background:#9a6b7a;
+
 }
 
 .content-grid{
+
     max-width:860px;
+
     margin:0 auto;
+
     display:grid;
+
     grid-template-columns:1fr 1fr;
+
     gap:24px;
+
 }
 
 .card{
+
     background:rgba(255,255,255,.42);
+
     border:1px solid #e7d4cd;
+
     border-radius:22px;
+
     padding:26px 24px;
+
     box-shadow:0 10px 24px rgba(102,72,72,.05);
+
 }
 
 .card h3{
+
     margin:0 0 14px;
+
     font-size:1.3rem;
+
     font-weight:normal;
+
     color:#634846;
+
 }
 
 .card p{
+
     margin:0;
+
     color:#675451;
+
     font-size:1rem;
+
 }
 
 .pricing-section{
+
     max-width:860px;
+
     margin:46px auto 0;
+
 }
 
 .pricing-section h2{
+
     font-size:1.8rem;
+
     font-weight:normal;
+
     margin:0 0 16px;
+
     color:#634846;
+
 }
 
 .pricing-section p{
+
     margin:0 0 20px;
+
     color:#675451;
+
     font-size:1rem;
+
 }
 
 .pricing-sheet{
+
     background:rgba(255,255,255,.45);
+
     border:1px solid #e6d3cc;
+
     border-radius:24px;
+
     padding:14px;
+
     box-shadow:0 14px 28px rgba(102,72,72,.07);
+
 }
 
 .pricing-sheet img{
+
     width:100%;
+
     display:block;
+
     border-radius:16px;
+
 }
 
 .notes-link{
+
     max-width:860px;
+
     margin:28px auto 0;
+
     font-size:1rem;
+
     color:#675451;
+
 }
 
 .contact-link{
+
     max-width:860px;
+
     margin:24px auto 0;
+
     text-align:center;
+
 }
 
 .booking-text{
+
     margin-bottom:12px;
+
     color:#675451;
+
     font-size:1rem;
+
 }
 
 .sms-button{
+
     display:inline-flex;
+
     align-items:center;
+
     justify-content:center;
+
     width:44px;
+
     height:44px;
+
     border-radius:50%;
+
     background:rgba(255,255,255,.55);
+
     border:1px solid #e2cbc3;
+
     box-shadow:0 8px 18px rgba(102,72,72,.08);
+
     font-size:1.1rem;
+
     text-decoration:none;
+
 }
 
 .sms-button:hover{
+
     background:rgba(255,255,255,.78);
+
 }
 
 footer{
+
     text-align:center;
+
     padding:30px 24px 46px;
+
     font-size:.95rem;
+
     color:#a08282;
+
     border-top:1px solid #e2cbc3;
+
     background:#f9f1ee;
+
 }
 
 @media (max-width:800px){
+
     .content-grid{
+
         grid-template-columns:1fr;
+
     }
+
 }
 
 @media (max-width:700px){
+
     header{
+
         padding:54px 22px 28px;
+
     }
 
     h1{
+
         font-size:2.3rem;
+
     }
 
     .subtitle{
+
         font-size:1rem;
+
     }
 
     nav a{
+
         margin:0 10px;
+
         font-size:.92rem;
+
     }
 
     .container{
+
         padding:40px 22px 64px;
+
     }
 
     .intro h2,
+
     .pricing-section h2{
+
         font-size:1.7rem;
+
     }
 
     .intro p{
+
         font-size:1rem;
+
     }
 
     .carousel-wrap{
+
         max-width:100%;
+
     }
 
     .slide img{
+
         height:300px;
+
     }
 
     .card{
+
         padding:22px 18px;
+
     }
+
 }
+
 </style>
+
 </head>
 
 <body>
 
 <header>
+
     <h1>Cassie Soma Studio</h1>
+
     <div class="subtitle">Boutique Grooming · Craft · Quiet Care</div>
+
 </header>
 
 <nav>
+
     <a href="index.html">Home</a>
+
     <a href="studio.html">Art Studio</a>
+
 </nav>
 
 <div class="container">
 
     <section class="intro">
+
         <h2>Grooming Craft</h2>
+
         <p>
+
             Dog grooming is both profession and practice — a study in patience, precision, and the quiet relationship between human and animal.
+
         </p>
+
         <p>
+
             These experiences inform the essays and reflections collected in
+
             <a href="https://substack.com/@cassiesomastudio/note/p-190503497?r=2lp542&utm_medium=ios&utm_source=notes-share-action" target="_blank">Notes from the Grooming Table</a>.
+
         </p>
+
         <p>
+
             We provide boutique, time-efficient mobile grooming delivered privately to your door. Our studio operates on quiet shore power with solar assist, creating a calm, environmentally conscious experience for you and your dog.
+
         </p>
+
     </section>
 
     <section class="carousel-wrap">
+
         <div class="carousel">
+
             <div class="slides" id="slides">
+
                 <div class="slide"><img src="2DF3F561-E25B-4418-A810-DDFC16E0C30D.png"></div>
+
                 <div class="slide"><img src="A8F965FD-1437-4F1B-BF84-3F0948E08AC0.png"></div>
+
                 <div class="slide"><img src="C88E435C-868D-430B-8385-791E7B0E6A61.png"></div>
+
                 <div class="slide"><img src="FDA95605-D9C9-4C95-9924-DC86E0DB7418.png"></div>
+
                 <div class="slide"><img src="826B28B9-B09B-4597-BE36-D57BC7257F28.png"></div>
+
                 <div class="slide"><img src="05CE890A-AC71-4A28-AD6D-F88FCB5E380E.png"></div>
+
             </div>
 
             <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+
             <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+
         </div>
 
         <div class="dots" id="dots">
+
             <button class="dot active" onclick="goToSlide(0)"></button>
+
             <button class="dot" onclick="goToSlide(1)"></button>
+
             <button class="dot" onclick="goToSlide(2)"></button>
+
             <button class="dot" onclick="goToSlide(3)"></button>
+
             <button class="dot" onclick="goToSlide(4)"></button>
+
             <button class="dot" onclick="goToSlide(5)"></button>
+
         </div>
+
     </section>
 
     <section class="content-grid">
+
         <div class="card">
+
             <h3>Boutique Mobile Service</h3>
+
             <p>
+
                 One-on-one appointments, a private setting, and a quiet, carefully maintained mobile studio allow each dog to be groomed with focused attention rather than rushed through a high-volume environment.
+
             </p>
+
         </div>
 
         <div class="card">
+
             <h3>Craft & Continuity</h3>
+
             <p>
+
                 Grooming is not only about appearance, but about comfort, routine, coat maintenance, and trust. The work is shaped over time through consistency, observation, and a relationship built appointment by appointment.
+
             </p>
+
         </div>
+
     </section>
 
     <section class="pricing-section">
+
         <h2>Service & Pricing</h2>
+
         <p>
+
             For current service structure, maintenance scheduling, and pricing, please see the information sheet below.
+
         </p>
 
         <div class="pricing-sheet">
-            <img src="40ABB3B7-109F-4D0F-9667-A91A26B4DCE1.png">
+
+            <img src="6584D6D3-414E-4235-B5FF-C80756A58358.png">
+
         </div>
+
     </section>
 
     <div class="notes-link">
+
         <p>
+
             Read the writing side of this work on
+
             <a href="https://substack.com/@cassiesomastudio/note/p-190503497?r=2lp542&utm_medium=ios&utm_source=notes-share-action" target="_blank">Substack: Notes from the Grooming Table</a>.
+
         </p>
+
     </div>
 
     <div class="contact-link">
+
         <p class="booking-text">
-            Appointments are scheduled directly. Tap below to text and request a time.
+
+            Appointments are scheduled directly. Text 480-418-1637 to request a time.
+
         </p>
-        <a class="sms-button" href="sms:4802485491">✉</a>
+
+        <a class="sms-button" href="sms:4804181637">✉</a>
+
     </div>
 
 </div>
 
 <footer>
+
     © Cassie Soma Studio
+
 </footer>
 
 <script>
+
 let currentSlide = 0;
+
 const slides = document.getElementById('slides');
+
 const dots = document.querySelectorAll('.dot');
+
 const totalSlides = dots.length;
 
 function updateCarousel(){
+
     slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+
     dots.forEach((dot, index) => {
+
         dot.classList.toggle('active', index === currentSlide);
+
     });
+
 }
 
 function moveSlide(direction){
+
     currentSlide += direction;
+
     if(currentSlide < 0){
+
         currentSlide = totalSlides - 1;
+
     }
+
     if(currentSlide >= totalSlides){
+
         currentSlide = 0;
+
     }
+
     updateCarousel();
+
 }
 
 function goToSlide(index){
+
     currentSlide = index;
+
     updateCarousel();
+
 }
+
 </script>
 
 </body>
+
 </html>
