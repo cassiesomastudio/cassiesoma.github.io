@@ -58,8 +58,54 @@ footer{text-align:center;background:#f6ece8;border-top:1px solid #dbc0b8;padding
   .section{padding:42px 0}
   .included{padding:24px;margin-bottom:38px}
 }
+
+/* Cassie Soma Studio editorial concept, preview only. */
+:root{--night:#121211;--charcoal:#242320;--ivory:#f1ece3;--cream:#e8e0d2;--gold:#d4c27f;--pale-gold:#e5d99d;--ink:#242320;--quiet:#645e54;--rule:#c7b77b}
+.brand-seal{display:block;width:184px;height:184px;object-fit:cover;border-radius:50%;margin:0 auto 22px;box-shadow:0 0 0 1px rgba(223,197,147,.65)}
+.brand-seal{filter:saturate(.6) brightness(1.07)}
+@media(max-width:700px){.brand-seal{width:142px;height:142px}}
+header{position:relative;overflow:hidden}
+header::before,header::after{content:'';position:absolute;top:20px;width:180px;height:225px;background:url('botanical-gold.svg') no-repeat center/contain;opacity:.45;pointer-events:none}
+header::before{left:max(10px,calc(50% - 520px))}
+header::after{right:max(10px,calc(50% - 520px));transform:scaleX(-1)}
+header>*{position:relative;z-index:1}
+@media(max-width:700px){header::before,header::after{width:94px;height:120px;top:16px;opacity:.34}header::before{left:-29px}header::after{right:-29px}}
+
+
+:root{--ink:#242320;--wine:#806129;--muted:#645e54;--line:#cdbb9a;--blush:#e8e0d2;--paper:#f1ece3;--white:#faf7f0}
+body{background:var(--ivory);color:var(--ink)}
+header{background:var(--night);border-bottom:4px double var(--gold)}
+.mast{padding:48px 24px 35px}
+.brand{color:var(--ivory);font-size:clamp(2.5rem,5vw,3.6rem);letter-spacing:.035em}
+.subtitle{color:var(--pale-gold);letter-spacing:.04em}
+.nav{background:var(--charcoal);border-top:0;border-bottom:1px solid var(--gold)}
+.nav a,.nav a:hover{color:var(--pale-gold)}
+.hero h1{color:#806b3c;font-size:clamp(2.3rem,4vw,3.5rem)}
+.included{background:var(--charcoal);border-color:#50442e;color:var(--ivory);border-radius:3px}
+.included h2{color:var(--pale-gold)}
+.included p,.included li{color:#e5ded3}
+.card,.choice{background:var(--white);border-color:var(--gold);border-radius:3px;box-shadow:0 12px 28px rgba(23,23,21,.06)}
+.choice:hover,.choice:focus-visible,.choice[aria-pressed="true"]{background:var(--night);color:var(--ivory);border-color:var(--gold)}
+.choice:hover strong,.choice:focus-visible strong,.choice[aria-pressed="true"] strong{color:var(--pale-gold)}
+.choice:hover span,.choice:focus-visible span,.choice[aria-pressed="true"] span{color:#e5ded3}
+.annual-panel{background:var(--cream);border:2px solid var(--gold);border-radius:3px}
+.details{background:var(--cream)}
+.cta{background:var(--night);color:var(--pale-gold);border:2px solid var(--gold);border-radius:3px}
+.cta:hover,.cta:focus-visible{background:var(--charcoal);color:#fff}
+footer{background:var(--night);color:var(--pale-gold);border-top:1px solid var(--gold)}
+@media(max-width:620px){.mast{padding:44px 22px 31px}}
+.brand,.hero h1,h2,.included h2,.card h3,.choice strong,.annual-panel h3{font-family:Baskerville,'Palatino Linotype',Palatino,Georgia,serif}
+.hero h1{font-style:italic;font-size:clamp(2.5rem,4.5vw,3.7rem)}
+.section h2{font-style:italic;font-size:2.4rem}
+.included{border-radius:28px;padding-top:38px}
+.card,.choice{border-radius:24px}
+.annual-panel{border-radius:26px;padding-top:32px}
+.nav a{color:var(--pale-gold);text-decoration:none}
+.hero:before{content:'✦';display:block;color:var(--gold);margin-bottom:11px;font-size:1.1rem}
+.rate-list li{border-color:var(--rule)}
+
 </style></head>
-<body><header><div class="mast"><a class="brand" href="/">Cassie Soma Studio</a><div class="subtitle">Grooming Craft</div></div><nav class="nav" aria-label="Main navigation"><a href="/">Home</a><a href="/studio.html">Art Studio</a></nav></header><main>
+<body><header><div class="mast"><img class="brand-seal" src="cassie-soma-studio-logo-gold.jpg" alt="Cassie Soma Studio emblem"><a class="brand" href="index.html">Cassie Soma Studio</a><div class="subtitle">Grooming Craft</div></div><nav class="nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="studio.html">Art Studio</a></nav></header><main>
 <div class="wrap hero"><h1>Thoughtful care, clearly priced.</h1><p class="intro">Private, one-on-one mobile grooming for small and medium dogs. Your dog receives the same core care whether the coat needs a haircut or simply a bath.</p><a class="cta" href="sms:+14804181637">Text to request an appointment</a></div>
 <section class="wrap"><div class="included"><h2>What every groom includes</h2><p>A full-service appointment is tailored to your dog's coat and comfort. A long-haired dog may receive a clipper-based Comfort Groom. A short-haired dog may need no haircut at all.</p><ul><li>Bath</li><li>Blow dry and brush-out</li><li>Haircut when appropriate</li><li>Ear cleaning</li><li>Nail trimming</li><li>Anal glands if needed</li></ul></div></section>
 <section class="section"><div class="wrap"><h2>Choose your dog's coat</h2><p class="lede">Select the coat type to see only the prices and packages that apply to your dog.</p><div class="choices"><button class="choice" type="button" id="short-choice" aria-controls="short-panel" aria-pressed="false" data-coat="short"><strong>Short-haired dogs</strong><span>Care for smooth or short coats, with no body haircut needed.</span></button><button class="choice" type="button" id="long-choice" aria-controls="long-panel" aria-pressed="false" data-coat="long"><strong>Long-haired dogs</strong><span>Comfort Groom pricing for coats that need a haircut.</span></button></div></div></section>

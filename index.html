@@ -216,12 +216,52 @@ footer{
         font-size:.95rem;
     }
 }
+
+/* Cassie Soma Studio editorial concept, preview only. */
+:root{--night:#121211;--charcoal:#242320;--ivory:#f1ece3;--cream:#e8e0d2;--gold:#d4c27f;--pale-gold:#e5d99d;--ink:#242320;--quiet:#645e54;--rule:#c7b77b}
+.brand-seal{display:block;width:184px;height:184px;object-fit:cover;border-radius:50%;margin:0 auto 22px;box-shadow:0 0 0 1px rgba(223,197,147,.65)}
+.brand-seal{filter:saturate(.6) brightness(1.07)}
+@media(max-width:700px){.brand-seal{width:142px;height:142px}}
+header{position:relative;overflow:hidden}
+header::before,header::after{content:'';position:absolute;top:20px;width:180px;height:225px;background:url('botanical-gold.svg') no-repeat center/contain;opacity:.45;pointer-events:none}
+header::before{left:max(10px,calc(50% - 520px))}
+header::after{right:max(10px,calc(50% - 520px));transform:scaleX(-1)}
+header>*{position:relative;z-index:1}
+@media(max-width:700px){header::before,header::after{width:94px;height:120px;top:16px;opacity:.34}header::before{left:-29px}header::after{right:-29px}}
+
+
+body{background:var(--ivory);color:var(--ink)}
+header{max-width:none;background:var(--night);padding:48px 24px 43px;border-bottom:4px double var(--gold)}
+header h1{color:var(--ivory);font-size:clamp(2.6rem,5vw,4.5rem);line-height:1.12;letter-spacing:.035em}
+.subtitle{color:var(--pale-gold);letter-spacing:.045em}
+#about{max-width:960px;padding-top:68px}
+h2{color:#806b3c;font-size:2.2rem}
+#about h2:after{content:'';display:block;width:72px;height:1px;background:var(--gold);margin-top:14px}
+p{color:#47443f}.press-here{color:#806b3c;letter-spacing:.18em}
+.path-card{border:2px solid var(--gold);border-radius:3px;background-color:var(--charcoal);box-shadow:0 13px 32px rgba(23,23,21,.12)}
+.path-card:before{background:linear-gradient(to top,rgba(15,15,14,.78),rgba(15,15,14,.16) 76%)}
+.path-content h3{font-size:2.15rem;color:var(--pale-gold)}.path-content p{color:#eee7dc}
+.path-card:hover{box-shadow:0 18px 40px rgba(23,23,21,.19)}
+.studio-card{background-image:none!important;background:var(--night);min-height:370px}
+.path-avatar{position:relative;z-index:1;display:block;width:190px;height:190px;object-fit:cover;border-radius:50%;border:2px solid var(--pale-gold);margin:25px auto 0;box-shadow:0 6px 25px rgba(0,0,0,.25)}
+footer{background:var(--night);color:var(--pale-gold);border-top:1px solid var(--gold)}
+header h1{font-family:Baskerville,'Palatino Linotype',Palatino,Georgia,serif;font-weight:normal}
+#about h2{font-family:Baskerville,'Palatino Linotype',Palatino,Georgia,serif;font-style:italic;font-size:2.75rem}
+#about h2:after{width:118px;height:1px;background:linear-gradient(90deg,var(--gold) 0 42%,transparent 42% 58%,var(--gold) 58%);margin-top:18px}
+#about{padding-top:74px;padding-bottom:80px}
+.path-card{border-radius:26px}
+.path-card::after{content:'✦';position:absolute;top:12px;right:15px;color:var(--pale-gold);font-size:1.05rem;z-index:2}
+.path-content h3{font-family:Baskerville,'Palatino Linotype',Palatino,Georgia,serif;font-style:italic;font-size:2.7rem}
+@media(max-width:700px){.studio-card{min-height:265px}.path-avatar{width:128px;height:128px;margin:17px auto 0}}
+@media(max-width:700px){header{padding:44px 22px 36px}#about{padding-top:44px}}
+
 </style>
 </head>
 
 <body>
 
 <header>
+    <img class="brand-seal" src="cassie-soma-studio-logo-gold.jpg" alt="Cassie Soma Studio emblem">
     <h1>Cassie Soma Studio</h1>
     <div class="subtitle">Photography · Writing · Embodied Art · Grooming Craft</div>
 </header>
@@ -241,7 +281,7 @@ footer{
     <div class="pathways">
         <div class="path-wrap">
             <div class="press-here">Enter here</div>
-            <a href="studio.html" class="path-card studio-card" style="background-image:url('CB623C08-A76F-4345-9623-93044537CCFD.png');">
+            <a href="studio.html" class="path-card studio-card"><img class="path-avatar" src="cassie-soma-portrait-blonde.png" alt="Cassie Soma portrait">
                 <div class="path-content">
                     <h3>Art Studio</h3>
                     <p>Photography, writing, and embodied art.</p>
