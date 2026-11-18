@@ -329,6 +329,22 @@ header h1,.intro h2,.featured-story h2,.writing-section h2{font-family:Baskervil
 @media(max-width:700px){.thumb{flex-basis:56px}.thumb img{width:56px;height:56px}.entry-inner{gap:12px}}
 @media(max-width:700px){header{padding:44px 22px 36px}.featured-story{padding:25px}}
 
+
+/* Published books */
+.published-books{max-width:788px;margin:0 auto 54px;scroll-margin-top:24px}
+.published-books>h2{font-family:Baskerville,'Palatino Linotype',Palatino,Georgia,serif;font-size:2.35rem;font-weight:normal;color:#806b3c;margin:0 0 10px}
+.books-intro{margin:0 0 26px;color:#59544b}
+.book-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.book-card{display:flex;flex-direction:column;min-width:0;padding:28px;box-sizing:border-box;border:1px solid var(--gold);border-radius:18px;background:#f8f4ec;box-shadow:0 10px 24px rgba(23,23,21,.06)}
+.book-card h3{font-family:Baskerville,'Palatino Linotype',Palatino,Georgia,serif;font-size:1.85rem;font-weight:normal;line-height:1.2;color:var(--ink);margin:0 0 14px}
+.book-card p{font-size:1rem;line-height:1.75;color:#47443f;margin:0 0 18px}
+.book-card .book-subtitle{font-size:.94rem;color:#645e54;line-height:1.5}
+.book-card .book-note{font-size:.9rem;color:#645e54}
+.book-card .book-buy{align-self:flex-start;margin-top:auto;display:inline-block;padding:10px 20px;border:1px solid var(--charcoal);border-radius:6px;background:var(--charcoal);color:var(--pale-gold);text-decoration:none;line-height:1.5}
+.book-card .book-buy:hover{background:#3b382f}
+.book-card .book-buy:focus-visible{outline:3px solid #806b3c;outline-offset:4px}
+@media(max-width:700px){.book-grid{grid-template-columns:1fr}.book-card{padding:24px}}
+
 </style>
 </head>
 
@@ -360,6 +376,28 @@ header h1,.intro h2,.featured-story h2,.writing-section h2{font-family:Baskervil
             <p>
                 This space holds photography and writing together — not as separate disciplines, but as parts of the same unfolding life.
             </p>
+        </div>
+    </section>
+
+
+    <section class="published-books" id="published-books" aria-labelledby="published-books-title">
+        <h2 id="published-books-title">Published Books</h2>
+        <p class="books-intro">Two collections of words, photographs, and moments from a life being lived on my own terms. Available in paperback on Amazon.</p>
+        <div class="book-grid">
+            <article class="book-card" aria-labelledby="on-my-own-terms-title">
+                <h3 id="on-my-own-terms-title">On My Own Terms</h3>
+                <p class="book-subtitle">Self-Portraits and Essays on Identity, Embodiment, and Everyday Life</p>
+                <p>Through personal essays and intimate self-portraits, Cassie Soma explores identity, embodiment, love, survival, and the ordinary rituals that make a life feel like home. There are dogs, unmade beds, coffee, and wine. Humor alongside loneliness, tenderness alongside stubbornness, and a woman learning to be seen while holding onto the right to define herself.</p>
+                <p>A collection in words and photographs: a whole, complicated life, still becoming.</p>
+                <p class="book-note">Includes artistic nude self-portraits. Intended for adult readers.</p>
+                <a class="book-buy" href="https://a.co/d/0bsyp764" target="_blank" rel="noopener noreferrer" aria-label="Buy On My Own Terms on Amazon (opens in a new tab)">Buy on Amazon</a>
+            </article>
+            <article class="book-card" aria-labelledby="grooming-table-title">
+                <h3 id="grooming-table-title">Notes from the Grooming Table</h3>
+                <p>Reflections from Cassie Soma’s life as a mobile dog groomer, bringing together the dogs, the people who love them, and the moments that stay with her after the day’s work is done. Funny encounters, difficult days, and small acts of trust reveal the patience, attention, and care at the heart of the craft.</p>
+                <p>A personal look at the relationships and everyday experiences that shape a working life, one dog at a time.</p>
+                <a class="book-buy" href="https://a.co/d/0h6uOzJd" target="_blank" rel="noopener noreferrer" aria-label="Buy Notes from the Grooming Table on Amazon (opens in a new tab)">Buy on Amazon</a>
+            </article>
         </div>
     </section>
 
